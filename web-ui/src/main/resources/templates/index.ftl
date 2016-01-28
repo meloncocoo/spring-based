@@ -43,6 +43,7 @@
 </head>
 <body>
 	<#include "/components/header.ftl" />
+	<#include "/components/menubar.ftl" />
 	  
 	<!-- Core  -->
 	<script src="/global/vendor/jquery/jquery.js"></script>

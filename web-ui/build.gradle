@@ -4,11 +4,15 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.1.RELEASE")
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:1.3.1.RELEASE"
+        classpath "com.moowork.gradle:gradle-grunt-plugin:0.11"
     }
 }
 
+//build.dependsOn grunt_build
+
 apply plugin: 'java'
+apply plugin: "com.moowork.grunt"
 
 jar {
     baseName = 'web-ui'

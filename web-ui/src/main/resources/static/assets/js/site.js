@@ -1,6 +1,6 @@
 /*!
  * remark (http://getbootstrapadmin.com/remark)
- * Copyright 2015 amazingsurge
+ * Copyright 2016 amazingsurge
  * Licensed under the Themeforest Standard Licenses
  */
 (function(window, document, $) {
@@ -13,7 +13,7 @@
   $.configs.set('site', {
     fontFamily: "Noto Sans, sans-serif",
     primaryColor: "indigo",
-    assets: "/assets"
+    assets: "../assets"
   });
 
   window.Site = $.site.extend({

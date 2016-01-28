@@ -1,0 +1,62 @@
+{
+	"name": "melon-spring-based",
+	"title": "Melon Spring Based",
+	"description": "This is a demo for grunt.",
+	"version": "1.0.0",
+	"homepage": "http://www.meloncocoo.com",
+	"private": true,
+	"keywords": [
+	    "css",
+	    "js",
+	    "less",
+	    "responsive",
+	    "framework",
+	    "web",
+	    "admin",
+	    "bootstrap"
+	],
+	"author": {
+		"name": "meloncocoo",
+		"url": "http://www.meloncocoo.com"
+	},
+	"bugs": {
+		"url": "http://www.meloncocoo.com/forum"
+	},
+	"license": "",
+	"devDependencies": {
+		"glob": "*",
+		"grunt": "*",
+		"grunt-cli": "*",
+		"grunt-autoprefixer": "*",
+		"grunt-bootlint": "*",
+		"grunt-contrib-clean": "*",
+		"grunt-contrib-concat": "*",
+		"grunt-contrib-copy": "*",
+		"grunt-contrib-csslint": "*",
+		"grunt-contrib-cssmin": "*",
+		"grunt-contrib-jshint": "*",
+		"grunt-contrib-less": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-csscomb": "*",
+		"grunt-exec": "*",
+		"grunt-hb": "*",
+		"grunt-html": "*",
+		"grunt-notify": "*",
+		"grunt-prettify": "*",
+		"handlebars-layouts": "*",
+		"load-grunt-config": "*",
+		"load-grunt-tasks": "*"
+	},
+	"engines": {
+		"node": ">=0.10.1"
+	},
+	"file": [
+		"assets/js/**/*.js",
+		"assets/css/**/*.css",
+		"assets/skins/*.css",
+		"src/js/**/*.js",
+		"src/less/**/*.less",
+		"src/skins/**/*.less"		
+	]
+}

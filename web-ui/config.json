@@ -1,0 +1,11 @@
+{
+	"destination": {
+		"css": 		"assets/css",
+		"js":		"assets/js",
+		"skins":	"assets/skins"
+	},
+	"bootstrap": {
+		"less": "src/less/bootstrap",
+		"mixins": "src/less/mixins"
+	}
+}

@@ -1,11 +1,29 @@
 {
-	"destination": {
-		"css": 		"assets/css",
-		"js":		"assets/js",
-		"skins":	"assets/skins"
-	},
-	"bootstrap": {
-		"less": "src/less/bootstrap",
-		"mixins": "src/less/mixins"
-	}
+  "destination": {
+    "js": "src/main/resources/static/js",
+    "css": "src/main/resources/static/css",
+    "fonts": "src/main/resources/static/fonts",
+    "vendor": "src/main/resources/static/vendor"
+  },
+  "source": {
+    "path": "src",
+    "js": "src/js",
+    "less": "src/less",
+    "fonts": "src/fonts",
+    "vendor": "src/vendor"
+  },
+  "bootstrap": {
+    "less": "src/less/bootstrap",
+    "mixins": "src/less/mixins"
+  },
+  "autoprefixerBrowsers": [
+    "Android 2.3",
+    "Android >= 4",
+    "Chrome >= 20",
+    "Firefox >= 24",
+    "Explorer >= 8",
+    "iOS >= 6",
+    "Opera >= 12",
+    "Safari >= 6"
+  ]
 }

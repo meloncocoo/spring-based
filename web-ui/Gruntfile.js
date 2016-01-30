@@ -36,33 +36,23 @@ module.exports = function(grunt) {
 	grunt.registerTask('lint', [ 'csslint', 'jshint' ]);
 
 	// Clean task.
-	grunt.registerTask('clean-dist', [ 'clean:css', 'clean:js', 'clean:fonts',
-			'clean:vendor' ]);
+	grunt.registerTask('clean-dist', [ 'clean:css', 'clean:js', 'clean:fonts', 'clean:vendor' ]);
 
 	// JS distribution task.
-	grunt.registerTask('dist-js', [ 'clean:js', 'concat:components',
-			'concat:js', 'uglify:min', 'notify:js' ]);
+	grunt.registerTask('dist-js', [ 'clean:js', 'concat:components', 'concat:js', 'uglify:min', 'notify:js' ]);
 
 	// CSS distribution task.
-	// CSS distribution task.
-	grunt.registerTask('less-compile', [ 'less:compileBootstrap',
-			'less:compileExtend' ]);
-	grunt.registerTask('dist-css', [ 'clean:css', 'less-compile',
-			'autoprefixer:css', 'csscomb:css', 'cssmin:css', 'notify:css' ]);
+	grunt.registerTask('less-compile', [ 'less:compileBootstrap', 'less:compileExtend', 'less:compileSite' ]);
+	grunt.registerTask('dist-css', [ 'clean:css', 'less-compile', 'autoprefixer:css', 'csscomb:css', 'cssmin:css', 'notify:css' ]);
 
 	// Vendor distribution task.
-	grunt.registerTask('dist-vendor', [ 'clean:vendor', 'less:vendor',
-			'autoprefixer:vendor', 'csscomb:vendor', 'cssmin:vendor',
-			'notify:vendor' ]);
+	grunt.registerTask('dist-vendor', [ 'clean:vendor', 'less:vendor', 'autoprefixer:vendor', 'csscomb:vendor', 'cssmin:vendor', 'notify:vendor' ]);
 
 	// Fonts distribution task.
-	grunt.registerTask('dist-fonts', [ 'clean:fonts', 'less:fonts',
-			'autoprefixer:fonts', 'csscomb:fonts', 'cssmin:fonts',
-			'notify:fonts' ]);
+	grunt.registerTask('dist-fonts', [ 'clean:fonts', 'less:fonts', 'autoprefixer:fonts', 'csscomb:fonts', 'cssmin:fonts', 'notify:fonts' ]);
 
 	// Full distribution task.
-	grunt.registerTask('dist', [ 'dist-js', 'dist-css', 'dist-vendor',
-			'dist-fonts', 'notify:all' ]);
+	grunt.registerTask('dist', [ 'dist-js', 'dist-css', 'dist-vendor', 'dist-fonts', 'notify:all' ]);
 
 	// Default task.
 	grunt.registerTask('default', [ 'dist-css', 'dist-vendor' ]);

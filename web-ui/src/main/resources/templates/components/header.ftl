@@ -1,7 +1,7 @@
 <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
 	<div class="navbar-header">
 		<div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-			<img class="navbar-brand-logo" src="../assets/images/logo.png" title="Remark">
+			<img class="navbar-brand-logo" src="assets/images/logo.png" title="Remark">
 			<span class="navbar-brand-text"> Spring Boot App </span>
 		</div>
 	</div>
@@ -39,7 +39,7 @@
 				<li class="dropdown">
 					<a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
 						<span class="avatar avatar-online">
-							<img src="../../global/portraits/5.jpg" alt="...">
+							<img src="assets/images/portraits/5.jpg" alt="...">
 							<i></i>
 						</span>
 					</a>

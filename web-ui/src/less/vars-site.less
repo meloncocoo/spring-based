@@ -20,13 +20,11 @@
 //== Site Menubar
 //
 //##
-@site-menubar-header-height:        140px;
-
 @site-menubar-bg:                   @inverse;
-@site-menubar-width:                260px;
-@site-menubar-transform:            -240px;
+@site-menubar-unfold-width:         260px;
+@site-menubar-fold-width:           90px;
 
-@site-menubar-padding-horizontal:   25px;
+@site-menubar-padding-horizontal:   30px;
 
 @site-menubar-color:                fade(@text-color, 90%);
 @site-menubar-font-family:          @headings-font-family;
@@ -36,28 +34,37 @@
 
 @site-menubar-footer-height:        76px;
 @site-menubar-footer-color:         @gray-dark;
-@site-menubar-footer-link-bg:       rgb(33, 41, 46);
-@site-menubar-footer-link-hover-bg: rgb(30, 36, 39);
+@site-menubar-footer-link-bg:       @gray-lighter;
+@site-menubar-footer-link-hover-bg: darken(@gray-lighter, 5%);
 
 
 //== Site Menubar Fold
 //
 //##
-@site-menubar-fold-width:           70px;
-@site-menubar-fold-sub-width:       240px;
-@site-menubar-fold-sub-bg:          @inverse;
-@site-menubar-fold-sub-shadow:      1px 1px 4px 0px rgba(0,0,0,.1);
+@site-menubar-fold-nav-height: 60px;
+@site-menubar-fold-sub-bg:     @inverse;
+@site-menubar-fold-sub-width:  240px;
+@site-menubar-fold-divider-bg: darken(@site-menubar-bg, 1%);
+@site-menubar-fold-box-shadow: 1px 0px 2px rgba(0,0,0,.08);
 
-//== Site Menubar Hover
+// Dark
+@site-menubar-dark-fold-sub-bg:     @gray-base;
+@site-menubar-dark-fold-divider-bg: fade(@color-blue-800, 5%);
+@site-menubar-dark-fold-box-shadow: 2px 1px 2px rgba(0,0,0,.08);
+
+//== Site Menubar Fold Alt
 //
 //##
-@site-menubar-hover-transform:      -240px;
+@site-menubar-fold-top-active-bg: @gray-darkest;
+
+// Dark
+@site-menubar-dark-fold-top-active-bg: fade(@gray-darkest, 90%);
+@site-menubar-dark-fold-alt-box-shadow: none;
 
 //== Site Menu
 //
 //##
 @site-menu-top-weight:              @font-weight-bold;
-
 @site-menu-top-hover-color:         @gray-darkest;
 @site-menu-top-hover-bg:            fade(@gray-base, 5%);
 
@@ -73,6 +80,7 @@
 @site-menu-top-open-bg:             @site-menu-top-active-bg;
 @site-menu-top-open-color:          @site-menu-top-active-color;
 @site-menu-top-height:              38px;
+@site-menu-top-font-size:           14px;
 
 @site-menu-sub-bg:                 transparent;
 @site-menu-sub-color:              @site-menubar-color;
@@ -82,23 +90,23 @@
 @site-menu-sub-active-color:       @site-menu-top-hover-color;
 @site-menu-sub-open-bg:            @site-menu-top-hover-bg;
 @site-menu-sub-open-color:         @site-menu-sub-active-color;
-@site-menu-sub-height:             34px;
+@site-menu-sub-height:             36px;
 
 @site-menu-category-color:         @gray-dark;
 
 @site-menu-has-sub-border-color:   rgba(0, 0, 0, .06);
 @site-menu-padding-horizontal:     @site-menubar-padding-horizontal;
 
-//== Site Menubar light
+//== Site Menubar dark
 //
 //##
 @site-menubar-dark-color:                fade(@gray, 90%);
 @site-menubar-dark-bg:                   @gray-base;
-
+@site-menubar-dark-shadow:               @site-menubar-shadow;
 @site-menubar-dark-footer-link-bg:         rgb(33, 41, 46);
 @site-menubar-dark-footer-link-hover-bg:   rgb(30, 36, 39);
 
-//== Site Menu light
+//== Site Menu dark
 //
 //##
 @site-menu-dark-top-open-head-bg:      transparent;
@@ -137,9 +145,8 @@
 //== Page
 //
 //##
-@page-bg:                 #eceff1;
+@page-bg:                 #f3f4f5;
 
-@page-centered-max-width: 1400px;
 @page-vertical-padding:   30px;
 @page-horizontal-padding: 30px;
 
@@ -168,11 +175,11 @@
 //== Site Footer
 //
 //##
-@site-footer-vertical-padding: 10px;
-@site-footer-bg:               rgba(0,0,0,.02);
-@site-footer-divider-color:    @gray-lighter;
-@site-footer-height:           44px;
-@site-footer-xs-height:        66px;
+@site-footer-vertical-padding: 	10px;
+@site-footer-bg:               	rgba(0,0,0,.02);
+@site-footer-divider-color:    	@gray-lighter;
+@site-footer-height:           	44px;
+@site-footer-xs-height: 		66px;
 
 //== Layout Boxed
 //

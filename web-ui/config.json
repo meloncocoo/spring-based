@@ -1,9 +1,9 @@
 {
   "destination": {
-    "js": "src/main/resources/static/js",
-    "css": "src/main/resources/static/css",
-    "fonts": "src/main/resources/static/fonts",
-    "vendor": "src/main/resources/static/vendor"
+    "js": "src/main/resources/static/assets/js",
+    "css": "src/main/resources/static/assets/css",
+    "fonts": "src/main/resources/static/assets/fonts",
+    "vendor": "src/main/resources/static/assets/vendor"
   },
   "source": {
     "path": "src",

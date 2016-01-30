@@ -22,6 +22,13 @@ module.exports = function() {
             src : '<%= config.source.less %>/bootstrap-extend.less',
             dest : '<%= config.destination.css %>/bootstrap-extend.css'
         },
+        compileSite: {
+        	options: {
+        		strictMath : true
+        	},
+        	src : '<%= config.source.less %>/site.less',
+        	dest : '<%= config.destination.css %>/site.css'
+        },
         fonts : {
             expand : true,
             cwd : '<%= config.source.fonts %>',

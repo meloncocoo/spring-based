@@ -54,7 +54,7 @@ body
 }
 body
 {
-    padding-top: 66px;
+    padding-top: 50px;
 }
 .site-menubar
 {
@@ -62,11 +62,11 @@ body
 
     position: fixed;
     z-index: 1400;
-    top: 66px;
+    top: 50px;
 
     height: 100%;
-    height: -webkit-calc(100% - 66px);
-    height:         calc(100% - 66px);
+    height: -webkit-calc(100% - 50px);
+    height:         calc(100% - 50px);
 
     color: rgba(117, 117, 117, .9);
     background: #fff;
@@ -420,7 +420,7 @@ body
 {
     position: fixed;
     z-index: 1500;
-    top: 66px;
+    top: 50px;
     bottom: 0;
 
     visibility: hidden;
@@ -1276,10 +1276,10 @@ body.site-gridmenu-active
 .page-aside-fixed .page-aside
 {
     position: fixed;
-    top: 66px;
+    top: 50px;
 
-    height: -webkit-calc(100% -  66px);
-    height:         calc(100% -  66px);
+    height: -webkit-calc(100% -  50px);
+    height:         calc(100% -  50px);
 }
 .page-aside-fixed .page-aside-inner
 {
@@ -1517,24 +1517,24 @@ body.site-gridmenu-active
     {
         position: fixed;
         z-index: 1100;
-        top: 66px;
+        top: 50px;
         left: -260px;
 
         visibility: visible;
         overflow-y: visible;
 
         width: 260px;
-        height: -webkit-calc(100% -  66px);
-        height:         calc(100% -  66px);
+        height: -webkit-calc(100% -  50px);
+        height:         calc(100% -  50px);
 
         border-color: transparent;
     }
     .site-navbar-collapse-show .page-aside
     {
-        top: 132px;
+        top: 100px;
 
-        height: -webkit-calc(100% -  132px);
-        height:         calc(100% -  132px);
+        height: -webkit-calc(100% -  100px);
+        height:         calc(100% -  100px);
     }
     .site-menubar-changing .page-aside,
     .site-menubar-open .page-aside
@@ -2420,7 +2420,7 @@ body.layout-full
         font-weight: 500;
         line-height: 38px;
 
-        margin-top: 20px;
+        margin-top: 0;
         padding: 0 24px;
 
         -webkit-transition: all .25s, font .1s .15s, color .1s .15s;
@@ -2597,7 +2597,7 @@ body.layout-full
     font-weight: 500;
     line-height: 38px;
 
-    margin-top: 20px;
+    margin-top: 0;
     padding: 0 24px;
 
     -webkit-transition: all .25s, font .1s .15s, color .1s .15s;
@@ -2770,12 +2770,12 @@ body.layout-full
     }
     body.site-navbar-collapse-show
     {
-        padding-top: 132px;
+        padding-top: 100px;
     }
     .site-navbar-collapse-show .slidePanel.slidePanel-right,
     .site-navbar-collapse-show .slidePanel.slidePanel-left
     {
-        top: 132px;
+        top: 100px;
 
         -webkit-transition: top .35s;
              -o-transition: top .35s;
@@ -2877,10 +2877,10 @@ body.site-navbar-small
     }
     .site-menubar
     {
-        top: 66px;
+        top: 50px;
 
-        height: -webkit-calc(100% - 66px);
-        height:         calc(100% - 66px);
+        height: -webkit-calc(100% - 50px);
+        height:         calc(100% - 50px);
 
         -webkit-transform: translate3d(-260px, 0, 0);
             -ms-transform: translate(-260px, 0);
@@ -2894,10 +2894,10 @@ body.site-navbar-small
     }
     .site-navbar-collapse-show .site-menubar
     {
-        top: 132px;
+        top: 100px;
 
-        height: -webkit-calc(100% - 132px);
-        height:         calc(100% - 132px);
+        height: -webkit-calc(100% - 100px);
+        height:         calc(100% - 100px);
     }
     .site-menubar-footer
     {

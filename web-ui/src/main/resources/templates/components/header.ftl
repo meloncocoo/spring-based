@@ -1,8 +1,9 @@
+<#import "/spring.ftl" as spring>
 <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
 	<div class="navbar-header">
 		<div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-			<img class="navbar-brand-logo" src="assets/images/logo.png" title="Remark">
-			<span class="navbar-brand-text"> Spring Boot App </span>
+			<img class="navbar-brand-logo" src="assets/images/logo.png" title="<@spring.message "site.title" />">
+			<span class="navbar-brand-text"> <@spring.message "site.title" /> </span>
 		</div>
 	</div>
 	<div class="navbar-container container-fluid">
@@ -45,17 +46,14 @@
 					</a>
 					<ul class="dropdown-menu" role="menu">
 						<li role="presentation">
-							<a href="javascript:void(0)" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> Profile</a>
+							<a href="javascript:void(0)" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> 个人信息</a>
 						</li>
 						<li role="presentation">
-							<a href="javascript:void(0)" role="menuitem"><i class="icon md-card" aria-hidden="true"></i> Billing</a>
-						</li>
-						<li role="presentation">
-							<a href="javascript:void(0)" role="menuitem"><i class="icon md-settings" aria-hidden="true"></i> Settings</a>
+							<a href="javascript:void(0)" role="menuitem"><i class="icon md-settings" aria-hidden="true"></i> 系统设置</a>
 						</li>
 						<li class="divider" role="presentation"></li>
 						<li role="presentation">
-							<a href="javascript:void(0)" role="menuitem"><i class="icon md-power" aria-hidden="true"></i> Logout</a>
+							<a href="javascript:void(0)" role="menuitem"><i class="icon md-power" aria-hidden="true"></i> 注销</a>
 						</li>
 					</ul>
 				</li>

@@ -4,13 +4,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-	<meta name="description" content="bootstrap admin template">
-	<meta name="author" content="">
-	<title>Dashboard | Remark Admin Template</title>
+	<meta name="description" content="KMC运营数据分析">
+	<meta name="author" content="Melon Cocoo">
+	<title>仪表盘 | KMC运营数据分析</title>
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/bootstrap.css">
 	<link rel="stylesheet" href="/assets/css/bootstrap-extend.css">
-	<link rel="stylesheet" href="/assets/css/site.min.css">
+	<link rel="stylesheet" href="/assets/css/site.css">
 	<!-- Plugins -->
 	<link rel="stylesheet" href="/assets/vendor/animsition/animsition.css">
 	<link rel="stylesheet" href="/assets/vendor/asscrollable/asScrollable.css">
@@ -24,8 +24,8 @@
 	<link rel="stylesheet" href="/assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
 	<link rel="stylesheet" href="/assets/examples/css/dashboard/v1.css">
 	<!-- Fonts -->
-	<link rel="stylesheet" href="/assets/fonts/material-design/material-design.min.css">
-	<link rel="stylesheet" href="/assets/fonts/brand-icons/brand-icons.min.css">
+	<link rel="stylesheet" href="/assets/fonts/material-design/material-design.css">
+	<link rel="stylesheet" href="/assets/fonts/brand-icons/brand-icons.css">
 	<!--<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>-->
 	<!--[if lt IE 9]>
 	<script src="/assets/vendor/html5shiv/html5shiv.min.js"></script>

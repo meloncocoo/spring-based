@@ -4089,12 +4089,12 @@ fieldset[disabled] .btn-pure.focus
 {
     line-height: 22px;
 
-    height: 66px;
-    margin-top: 16px;
+    height: 50px;
+    margin-top: 8px;
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     margin-bottom: 0;
-    padding: 22px 15px;
+    padding: 14px 15px;
 
     -webkit-transition: color .25s linear;
          -o-transition: color .25s linear;
@@ -4146,7 +4146,7 @@ fieldset[disabled] .btn-pure.focus
 {
     font-weight: 500;
 
-    padding: 22px 20px;
+    padding: 14px 20px;
 }
 .navbar-brand > .navbar-brand-logo
 {
@@ -4231,8 +4231,8 @@ fieldset[disabled] .btn-pure.focus
 .navbar-nav > li > a.navbar-avatar,
 .navbar-toolbar > li > a.navbar-avatar
 {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 @media (max-width: 767px)
 {
@@ -4320,7 +4320,7 @@ fieldset[disabled] .btn-pure.focus
 }
 .navbar-search-overlap .form-control
 {
-    height: 66px !important;
+    height: 50px !important;
 
     border-radius: 0;
     background-color: transparent !important;
@@ -4367,8 +4367,8 @@ fieldset[disabled] .btn-pure.focus
 {
     line-height: 22px;
 
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 .navbar-toolbar .dropdown-menu
 {

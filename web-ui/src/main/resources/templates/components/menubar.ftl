@@ -1,19 +1,27 @@
 <div class="site-menubar">
 	<div class="site-menubar-body">
 		<ul class="site-menu">
-			<li class="site-menu-category">General</li>
+			<li class="site-menu-category">通用</li>
 			<li class="site-menu-item active">
 				<a class="animsition-link" href="javascript:;">
 					<i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
-					<span class="site-menu-title">Dashboard</span>
+					<span class="site-menu-title">仪表盘</span>
 				</a>
 			</li>
-            <li class="site-menu-category">Charts</li>
-            <li class="site-menu-item">
+            <li class="site-menu-category">图表</li>
+            <li class="site-menu-item has-sub">
                 <a class="animsition-link" href="javascript:;">
                     <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
-                    <span class="site-menu-title">Charts</span>
+                    <span class="site-menu-title">所有图表</span>
+                    <span class="site-menu-arrow"></span>
                 </a>
+                <ul class="site-menu-sub">
+                	<li class="site-menu-item">
+                		<a class="animsition-link" href="javascript:;">
+                			<span class="site-menu-title">一些图标</span>
+                		</a>
+                	</li>
+                </ul>
             </li>
 		</ul>
 	</div>

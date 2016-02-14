@@ -2798,7 +2798,7 @@ body.site-navbar-small
 }
 .site-navbar-small .site-navbar .navbar-nav
 {
-    margin: 9.5px -15px;
+    margin: 9.5px -7px;
 }
 @media (min-width: 768px)
 {
@@ -2811,7 +2811,7 @@ body.site-navbar-small
 .site-navbar-small .site-navbar .navbar-toggle
 {
     height: 60px;
-    padding: 19px 15px;
+    padding: 19px 7px;
 }
 .site-navbar-small .site-navbar .navbar-toolbar > li > a
 {
@@ -3790,7 +3790,7 @@ fieldset[disabled] .form-material .form-control ~ .floating-label
 }
 .form-material [class*='col-'] > .floating-label
 {
-    left: 15px;
+    left: 7.5px;
 }
 .form-material .form-control ~ .floating-label
 {
@@ -8683,8 +8683,8 @@ a:focus
 [class*='blocks-']
 {
     margin: 0;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -8px;
+    margin-left: -7px;
     padding: 0;
 
     list-style: none;
@@ -8712,8 +8712,8 @@ a:focus
 
     min-height: 1px;
     margin-bottom: 22px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
 }
 .blocks.no-space,
 [class*='blocks-'].no-space
@@ -9624,7 +9624,7 @@ a:focus
 {
     position: relative;
 
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 
     background-color: #fff;
 }

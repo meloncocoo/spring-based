@@ -21,9 +21,9 @@
 <link rel="stylesheet" href="/assets/vendor/slidepanel/slidePanel.css">
 <link rel="stylesheet" href="/assets/vendor/flag-icon-css/flag-icon.css">
 <link rel="stylesheet" href="/assets/vendor/waves/waves.css">
-<link rel="stylesheet" href="/assets/vendor/chartist-js/chartist.css">
+<!-- <link rel="stylesheet" href="/assets/vendor/chartist-js/chartist.css">
 <link rel="stylesheet" href="/assets/vendor/jvectormap/jquery-jvectormap.css">
-<link rel="stylesheet" href="/assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="/assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css"> -->
 <#list styles as style>
 <link rel=stylesheet " href="${style}">
 </#list>

@@ -1,17 +1,22 @@
 <#import "/spring.ftl" as spring>
 <#import "/libs/layout.ftl" as layout>
 <#assign styles=[
-	'assets/vendor/morris-js/morris.css'
+	'assets/vendor/c3/c3.css'
 ] />
 <#assign scripts=[
-	'assets/vendor/flot/jquery.flot.js',
-	'assets/vendor/flot/jquery.flot.resize.js',
-	'assets/vendor/flot/jquery.flot.stack.js',
-	'assets/vendor/flot/jquery.flot.pie.js',
-	'assets/vendor/raphael/raphael.js',
-	'assets/vendor/morris-js/morris.js',
+	'assets/vendor/d3/d3.js',
+	'assets/vendor/c3/c3.js',
 	'assets/statistic/js/core.js'
 ] />
+<#--
+  <script src="../../../global/vendor/switchery/switchery.min.js"></script>
+  <script src="../../../global/vendor/intro-js/intro.js"></script>
+  <script src="../../../global/vendor/screenfull/screenfull.js"></script>
+  <script src="../../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+  <script src="../../../global/vendor/d3/d3.min.js"></script>
+  <script src="../../../global/vendor/c3/c3.min.js"></script>
+ 
+-->
 <@layout.base title="这里是标题" scripts=scripts>
 <div class="panel">
 	<div class="panel-title" style="padding-bottom: 0px;">
@@ -45,6 +50,9 @@
 					</table>
 				</div>
 			</div>
+			<div class="col-md-6">
+				<div id="exampleC3Donut"></div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -52,12 +60,8 @@
 <div class="panel">
 	<div class="panel-body container-fluid">
 		<div class="row" data-plugin="matchHeight" data-by-row="true">
-			<div class="col-md-6">
-				<div style="height: 300px;" id="exampleFlotMix"></div>
-			</div>
-			
-			<div class="col-md-6">
-				<div id="exampleMorrisDonut"></div>
+			<div class="col-md-12">
+				<div style="height: 300px;" id="chart"></div>
 			</div>
 		</div>
 	</div>

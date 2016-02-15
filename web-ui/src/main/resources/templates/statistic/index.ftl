@@ -20,47 +20,30 @@
 	<div class="panel-body container-fluid">
 		<div class="row" data-plugin="matchHeight" data-by-row="true">
 			<div class="col-md-6">
-				<table class="table table-hover">
-					<thead>
-						<tr>
-							<th><@spring.message "statistic.quarter" /></th>
-							<th><@spring.message "statistic.quantity" /></th>
-							<th><@spring.message "statistic.income" /></th>
-							<th><@spring.message "statistic.cost" /></th>
-							<th><@spring.message "statistic.profit" /></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>001</td>
-							<td>56272153.47</td>
-							<td>65181677.18</td>
-							<td>24561400.42</td>
-							<td>62.32%</td>
-						</tr>
-						<tr>
-							<td>002</td>
-							<td>56272153.47</td>
-							<td>65181677.18</td>
-							<td>24561400.42</td>
-							<td>62.32%</td>
-						</tr>
-						<tr>
-							<td>003</td>
-							<td>56272153.47</td>
-							<td>65181677.18</td>
-							<td>24561400.42</td>
-							<td>62.32%</td>
-						</tr>
-						<tr>
-							<td>004</td>
-							<td class="text-center">-</td>
-							<td class="text-center">-</td>
-							<td class="text-center">-</td>
-							<td class="text-center">-</td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th><@spring.message "statistic.quarter" /></th>
+								<th><@spring.message "statistic.quantity" /></th>
+								<th><@spring.message "statistic.income" /></th>
+								<th><@spring.message "statistic.cost" /></th>
+								<th><@spring.message "statistic.profit" /></th>
+							</tr>
+						</thead>
+						<tbody>
+						<#list sales![] as sale>
+							<tr>
+								<td class="text-right">${sale.quarter}</td>
+								<td class="text-right">${sale.quantity}</td>
+								<td class="text-right">${sale.income}</td>
+								<td class="text-right">${sale.cost}</td>
+								<td class="text-right"><span class="label label-table label-<#if (sale.profit > 0)>success<#else>danger</#if>">${sale.profit?string("#0.00%")}</span></td>
+							</tr>
+						</#list>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>

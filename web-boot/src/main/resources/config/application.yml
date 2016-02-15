@@ -1,3 +1,26 @@
 spring:
   freemarker:
     cache: false
+
+#  datasource:
+#    dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+#    url: jdbc:mysql://localhost:3306/spring?useUnicode=true&characterEncoding=utf8
+#    username: spring
+#    password: spring
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQLInnoDBDialect
+#    database: MYSQL
+#    openInView: false
+#    show-sql: false
+#    generate-ddl: false
+#    hibernate:
+#      ddl-auto: update
+#      naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+#    properties:
+#      hibernate:
+#        cache.use_second_level_cache: true
+#        cache.use_query_cache: false
+#        generate_statistics: false
+#        dialect: org.hibernate.dialect.MySQL5Dialect
+
+

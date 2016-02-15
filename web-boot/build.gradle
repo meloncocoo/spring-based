@@ -23,8 +23,17 @@ dependencies {
     compile "org.springframework.boot:spring-boot-devtools"
     compile "org.springframework.boot:spring-boot-starter-web"
     compile "org.springframework.boot:spring-boot-starter-freemarker"
+//    compile "org.springframework.boot:spring-boot-starter-data-jpa"
+    
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-joda"
+    compile "joda-time:joda-time"
+//    compile "joda-time:joda-time-hibernate"
+    compile "org.hibernate:hibernate-envers"
+    compile "org.jadira.usertype:usertype.core:4.0.0.GA"
     
     compile project(":web-ui")
+    
+    runtime "mysql:mysql-connector-java"
     
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }

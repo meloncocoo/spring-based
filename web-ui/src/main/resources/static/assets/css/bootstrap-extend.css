@@ -6224,12 +6224,12 @@ button.list-group-item-dark.active:focus
 }
 .panel > .alert
 {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 .panel > .alert-dismissible
 {
-    padding-right: 40px;
+    padding-right: 45px;
 }
 @media screen and (max-width: 480px)
 {
@@ -6260,7 +6260,7 @@ button.list-group-item-dark.active:focus
 .panel > .table > tfoot > tr > th:first-child,
 .panel > .table-responsive > .table > tfoot > tr > th:first-child
 {
-    padding-left: 20px;
+    padding-left: 25px;
 }
 @media screen and (max-width: 480px)
 {
@@ -6301,7 +6301,7 @@ button.list-group-item-dark.active:focus
 .panel > .table > tfoot > tr > th:last-child,
 .panel > .table-responsive > .table > tfoot > tr > th:last-child
 {
-    padding-right: 20px;
+    padding-right: 25px;
 }
 @media screen and (max-width: 480px)
 {
@@ -6332,8 +6332,8 @@ button.list-group-item-dark.active:focus
 }
 .panel > .list-group > .list-group-item
 {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 @media screen and (max-width: 480px)
 {
@@ -6420,7 +6420,7 @@ button.list-group-item-dark.active:focus
 
     display: block;
 
-    padding: 20px 20px;
+    padding: 20px 25px;
 
     color: #424242;
 }
@@ -6452,7 +6452,7 @@ button.list-group-item-dark.active:focus
     position: absolute;
     z-index: 1;
     top: 50%;
-    right: 20px;
+    right: 25px;
 
     margin: auto;
 
@@ -6622,8 +6622,8 @@ ul.panel-actions > li:first-child
 }
 .panel-body.scrollable-vertical > .scrollable-container > .scrollable-content
 {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 @media screen and (max-width: 480px)
 {
@@ -6635,21 +6635,21 @@ ul.panel-actions > li:first-child
 }
 .panel-body.scrollable-vertical > .scrollable-bar
 {
-    height: -webkit-calc(100% - 10px);
-    height:         calc(100% - 10px);
+    height: -webkit-calc(100% - 30px);
+    height:         calc(100% - 30px);
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
-    -webkit-transform: translateX(-16px);
-        -ms-transform: translateX(-16px);
-         -o-transform: translateX(-16px);
-            transform: translateX(-16px);
+    -webkit-transform: translateX(-21px);
+        -ms-transform: translateX(-21px);
+         -o-transform: translateX(-21px);
+            transform: translateX(-21px);
 }
 .panel-bordered > .panel-body.scrollable-vertical > .scrollable-bar
 {
-    height: -webkit-calc(100% - 20px);
-    height:         calc(100% - 20px);
-    margin-bottom: 10px;
+    height: -webkit-calc(100% - 60px);
+    height:         calc(100% - 60px);
+    margin-bottom: 30px;
 }
 .panel-body.scrollable-horizontal
 {
@@ -6659,24 +6659,24 @@ ul.panel-actions > li:first-child
 .panel-body.scrollable-horizontal > .scrollable-container > .scrollable-content
 {
     padding-top: 0;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 .panel-bordered > .panel-body.scrollable-horizontal > .scrollable-container > .scrollable-content
 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .panel-body.scrollable-horizontal > .scrollable-bar
 {
-    width: -webkit-calc(100% - 40px);
-    width:         calc(100% - 40px);
-    margin-right: 20px;
+    width: -webkit-calc(100% - 50px);
+    width:         calc(100% - 50px);
+    margin-right: 25px;
     margin-left: 0;
 
-    -webkit-transform: translateY(-6px);
-        -ms-transform: translateY(-6px);
-         -o-transform: translateY(-6px);
-            transform: translateY(-6px);
+    -webkit-transform: translateY(-26px);
+        -ms-transform: translateY(-26px);
+         -o-transform: translateY(-26px);
+            transform: translateY(-26px);
 }
 @media screen and (max-width: 480px)
 {
@@ -6689,10 +6689,10 @@ ul.panel-actions > li:first-child
 }
 .panel-bordered > .panel-body.scrollable-horizontal > .scrollable-bar
 {
-    -webkit-transform: translateY(-6px);
-        -ms-transform: translateY(-6px);
-         -o-transform: translateY(-6px);
-            transform: translateY(-6px);
+    -webkit-transform: translateY(-26px);
+        -ms-transform: translateY(-26px);
+         -o-transform: translateY(-26px);
+            transform: translateY(-26px);
 }
 .panel-bordered > .panel-heading
 {
@@ -6710,7 +6710,7 @@ ul.panel-actions > li:first-child
 }
 .panel-bordered > .panel-body
 {
-    padding-top: 10px;
+    padding-top: 30px;
 }
 .panel-bordered > .table > tbody:first-child > tr:first-child th,
 .panel-bordered > .table > tbody:first-child > tr:first-child td

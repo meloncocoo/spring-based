@@ -6152,11 +6152,11 @@ button.list-group-item-danger.active:focus
 }
 .panel-body
 {
-    padding: 10px 20px;
+    padding: 30px 25px;
 }
 .panel-heading
 {
-    padding: 20px 20px;
+    padding: 20px 25px;
 
     border-bottom: 1px solid transparent;
     border-top-left-radius: 3px;
@@ -6185,7 +6185,7 @@ button.list-group-item-danger.active:focus
 }
 .panel-footer
 {
-    padding: 0 20px 15px;
+    padding: 0 25px 15px;
 
     border-top: 1px solid #e0e0e0;
     border-bottom-right-radius: 3px;
@@ -6240,8 +6240,8 @@ button.list-group-item-danger.active:focus
 .panel > .table-responsive > .table caption,
 .panel > .panel-collapse > .table caption
 {
-    padding-right: 10px 20px;
-    padding-left: 10px 20px;
+    padding-right: 30px 25px;
+    padding-left: 30px 25px;
 }
 .panel > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child

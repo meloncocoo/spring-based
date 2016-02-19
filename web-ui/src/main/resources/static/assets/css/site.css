@@ -11438,6 +11438,9 @@ div.widget-title
         padding-right: 30px;
     }
 }
+@media screen and (max-width: 767px)
+{
+}
 .testimonial
 {
     margin: 3px 3px 22px;

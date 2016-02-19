@@ -56,4 +56,6 @@
 		</div>
 	</div>
 </div>
+
+<span>${springMacroRequestContext.getLocale()}</span>
 </@layout.base>

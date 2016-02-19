@@ -1986,7 +1986,7 @@ th
 {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 22px;
+    margin-bottom: 0;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,

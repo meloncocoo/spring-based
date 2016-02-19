@@ -79,6 +79,7 @@
 	<script src="../../assets/js/components/slidepanel.js"></script>
 	<script src="../../assets/js/components/switchery.js"></script>
 	<script src="../../assets/js/components/tabs.js"></script>
+	<script src="../../assets/js/components/ajax.js"></script>
 	<#list scripts as script>
 	<script src="${script}"></script>
 	</#list>

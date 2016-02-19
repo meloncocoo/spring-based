@@ -26,14 +26,14 @@
 			<ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up" aria-expanded="false" role="button">
-						<span class="flag-icon flag-icon-cn"></span>
+						<span class="flag-icon <#if (springMacroRequestContext.getLocale() == 'en')>flag-icon-us<#else>flag-icon-cn</#if>"></span>
 					</a>
 					<ul class="dropdown-menu" role="menu">
 						<li role="presentation">
-							<a href="javascript:void(0)" role="menuitem"><span class="flag-icon flag-icon-us"></span> English</a>
+							<a href="/api/language?lang=en" data-plugin="ajax" class="change-language" role="menuitem"><span class="flag-icon flag-icon-us"></span> English</a>
 						</li>
 						<li role="presentation">
-							<a href="javascript:void(0)" role="menuitem"><span class="flag-icon flag-icon-cn"></span> Chinese</a>
+							<a href="/api/language?lang=zh_CN" data-plugin="ajax" class="change-language" role="menuitem"><span class="flag-icon flag-icon-cn"></span> Chinese</a>
 						</li>
 					</ul>
 				</li>

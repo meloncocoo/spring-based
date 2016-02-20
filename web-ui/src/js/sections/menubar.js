@@ -74,8 +74,6 @@
       if (breakpoint) {
         switch (breakpoint.name) {
           case 'lg':
-            this.unfold();
-            break;
           case 'md':
           case 'sm':
             this.fold();
@@ -124,8 +122,6 @@
     },
 
     hide: function() {
-      this.hoverscroll.disable();
-
       if (this.opened !== false) {
         this.animate(function() {
 
@@ -140,12 +136,11 @@
     },
 
     unfold: function() {
-      this.hoverscroll.disable();
-
       if (this.folded !== false) {
         this.animate(function() {
           $body.removeClass('site-menubar-fold').addClass('site-menubar-unfold');
           this.folded = false;
+          this.hoverTriggerOff();
 
         }, function() {
           this.scrollable.enable();
@@ -165,15 +160,45 @@
 
           $body.removeClass('site-menubar-unfold').addClass('site-menubar-fold');
           this.folded = true;
+          this.hoverTrigger();
 
         }, function() {
-          this.hoverscroll.enable();
-
           if (this.folded !== null) {
             $.site.resize();
           }
         });
       }
+    },
+
+    hoverTrigger: function() {
+      var self = this;
+
+      if (this.folded) {
+        this.$instance.on("mouseenter", function() {
+          $body.addClass('site-menubar-hover');
+
+          setTimeout(function() {
+            self.scrollable.enable();
+          }, 500);
+
+        }).on("mouseleave", function() {
+          $body.removeClass('site-menubar-hover');
+
+          var api = self.$instance.data('mmenu');
+          if (api) {
+            api.openPanel($('#mm-0'));
+          }
+
+          setTimeout(function() {
+            self.scrollable.disable();
+          }, 500);
+        });
+      }
+    },
+
+    hoverTriggerOff: function() {
+      this.$instance.off("mouseenter");
+      this.$instance.off("mouseleave");
     },
 
     toggle: function() {
@@ -183,12 +208,6 @@
 
       switch (breakpoint.name) {
         case 'lg':
-          if (folded === null || folded === false) {
-            this.fold();
-          } else {
-            this.unfold();
-          }
-          break;
         case 'md':
         case 'sm':
           if (folded === null || folded === true) {
@@ -209,7 +228,6 @@
 
     update: function() {
       this.scrollable.update();
-      this.hoverscroll.update();
     },
 
     scrollable: {
@@ -227,7 +245,7 @@
           return;
         }
 
-        this.api = $.site.menubar.$instance.children('.site-menubar-body').asScrollable({
+        this.api = $.site.menubar.$instance.children('.mm-panels').asScrollable({
           namespace: 'scrollable',
           skin: 'scrollable-inverse',
           direction: 'vertical',
@@ -246,50 +264,6 @@
         if (this.native) {
           return;
         }
-        if (!this.api) {
-          this.init();
-        }
-        if (this.api) {
-          this.api.enable();
-        }
-      },
-
-      disable: function() {
-        if (this.api) {
-          this.api.disable();
-        }
-      }
-    },
-
-    hoverscroll: {
-      api: null,
-
-      init: function() {
-        this.api = $.site.menubar.$instance.children('.site-menubar-body').asHoverScroll({
-          namespace: 'hoverscorll',
-          direction: 'vertical',
-          list: '.site-menu',
-          item: '> li',
-          exception: '.site-menu-sub',
-          fixed: false,
-          boundary: 100,
-          onEnter: function() {
-            //$(this).siblings().removeClass('hover');
-            //$(this).addClass('hover');
-          },
-          onLeave: function() {
-            //$(this).removeClass('hover');
-          }
-        }).data('asHoverScroll');
-      },
-
-      update: function() {
-        if (this.api) {
-          this.api.update();
-        }
-      },
-
-      enable: function() {
         if (!this.api) {
           this.init();
         }

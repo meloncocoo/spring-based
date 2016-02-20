@@ -1,6 +1,15 @@
 <#import "/spring.ftl" as spring>
 <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
 	<div class="navbar-header">
+	      <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
+      data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
+      data-toggle="collapse">
+        <i class="icon md-more" aria-hidden="true"></i>
+      </button>
 		<div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
 			<img class="navbar-brand-logo" src="assets/images/logo.png" title="<@spring.message "site.title" />">
 			<span class="navbar-brand-text"> <@spring.message "site.title" /> </span>

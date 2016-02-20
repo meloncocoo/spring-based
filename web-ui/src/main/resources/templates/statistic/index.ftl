@@ -9,6 +9,74 @@
 	'assets/statistic/js/core.js'
 ] />
 <@layout.base title="这里是标题" scripts=scripts styles=styles>
+
+<div class="row">
+	<div class="col-md-3">
+          <!-- Widget -->
+          <div class="widget">
+            <div class="widget-content padding-30 bg-orange-600">
+              <div class="widget-watermark darker font-size-60 margin-15"><i class="icon md-assignment" aria-hidden="true"></i></div>
+              <div class="counter counter-md counter-inverse text-left">
+                <div class="counter-number-group">
+                  <span class="counter-number">137,343,160.83</span>
+                  <span class="counter-number-related text-capitalize"></span>
+                </div>
+                <div class="counter-label text-capitalize"><@spring.message "statistic.quantity" /></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->	
+	</div>
+	<div class="col-md-3">
+          <!-- Widget -->
+          <div class="widget">
+            <div class="widget-content padding-30 bg-green-400">
+              <div class="widget-watermark darker font-size-60 margin-15"><i class="icon md-assignment" aria-hidden="true"></i></div>
+              <div class="counter counter-md counter-inverse text-left">
+                <div class="counter-number-group">
+                  <span class="counter-number">154,793,658.37</span>
+                  <span class="counter-number-related text-capitalize"></span>
+                </div>
+                <div class="counter-label text-capitalize"><@spring.message "statistic.income" /></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->	
+	</div>
+	<div class="col-md-3">
+          <!-- Widget -->
+          <div class="widget">
+            <div class="widget-content padding-30 bg-blue-400">
+              <div class="widget-watermark darker font-size-60 margin-15"><i class="icon md-assignment" aria-hidden="true"></i></div>
+              <div class="counter counter-md counter-inverse text-left">
+                <div class="counter-number-group">
+                  <span class="counter-number"> 57,786,210.18</span>
+                  <span class="counter-number-related text-capitalize"></span>
+                </div>
+                <div class="counter-label text-capitalize"><@spring.message "statistic.cost" /></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->	
+	</div>
+	<div class="col-md-3">
+          <!-- Widget -->
+          <div class="widget">
+            <div class="widget-content padding-30 bg-red-300">
+              <div class="widget-watermark darker font-size-60 margin-15"><i class="icon wb-stats-bars" aria-hidden="true"></i></div>
+              <div class="counter counter-md counter-inverse text-left">
+                <div class="counter-number-group">
+                  <span class="counter-number">62.67%</span>
+                  <span class="counter-number-related text-capitalize"></span>
+                </div>
+                <div class="counter-label text-capitalize"><@spring.message "statistic.profit" /></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->	
+	</div>
+</div>
+
 <div class="panel">
 	<div class="panel-body container-fluid">
 		<div class="row" data-plugin="matchHeight" data-by-row="true">
@@ -41,6 +109,8 @@
 				</div>
 			</div>
 			<div class="col-md-6">
+				<h4 class="text-center">2015年期间汇总表</h4>
+				<p class="text-center">多厂多期间汇总</p>
 				<div id="exampleC3Donut"></div>
 			</div>
 		</div>
@@ -57,5 +127,4 @@
 	</div>
 </div>
 
-<span>${springMacroRequestContext.getLocale()}</span>
 </@layout.base>

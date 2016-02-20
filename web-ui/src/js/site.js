@@ -7,8 +7,7 @@
   // =============
   $.configs.set('site', {
     fontFamily: "Noto Sans, sans-serif",
-    primaryColor: "indigo",
-    assets: "../assets"
+    primaryColor: "indigo"
   });
 
   window.Site = $.site.extend({
@@ -38,8 +37,6 @@
               toggle($this);
             }
           });
-
-          $.site.menu.refresh();
         });
 
         $(document).on('click', '[data-toggle="collapse"]', function(e) {
@@ -63,10 +60,6 @@
             setTimeout(function() {
               $body.removeClass('site-navbar-collapsing');
             }, 350);
-
-            if (isOpen) {
-              $.site.menubar.scrollable.update();
-            }
           }
         });
 
@@ -75,6 +68,28 @@
 
           return false;
         });
+
+        if (typeof $.mmenu !== 'undefined') {
+          $('.site-menubar').mmenu({
+            offCanvas: false,
+            navbars: [{
+              position: 'bottom',
+              content: [
+                '<div class="site-menubar-footer">' +
+                '<a href="javascript: void(0);" class="fold-show" data-placement="top" data-toggle="tooltip" data-original-title="Settings">' +
+                '<span class="icon md-settings" aria-hidden="true"></span>' +
+                '</a>' +
+                '<a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Lock">' +
+                '<span class="icon md-eye" aria-hidden="true"></span>' +
+                '</a>' +
+                '<a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Logout">' +
+                '<span class="icon md-power" aria-hidden="true"></span>' +
+                '</a>' +
+                '</div>'
+              ]
+            }]
+          });
+        }
 
         $.site.menubar.init();
 
@@ -248,13 +263,19 @@
       // =========================
       if (typeof Waves !== 'undefined') {
         Waves.init();
-        Waves.attach('.site-menu-item > a', ['waves-classic']);
+        //Waves.attach('.site-menu-item > a', ['waves-classic']);
+        Waves.attach('.site-menu-sub > .site-menu-item > a', ['waves-classic']);
         Waves.attach(".site-navbar .navbar-toolbar [data-toggle='menubar']", ["waves-light", "waves-round"]);
         Waves.attach(".page-header-actions .btn:not(.btn-inverse)", ["waves-light", "waves-round"]);
         Waves.attach(".page-header-actions .btn-inverse", ["waves-classic", "waves-round"]);
         Waves.attach('.page > div:not(.page-header) .btn:not(.ladda-button):not(.btn-round):not(.btn-pure):not(.btn-floating):not(.btn-flat)', ['waves-light']);
         Waves.attach('.page > div:not(.page-header) .btn-pure:not(.ladda-button):not(.btn-round):not(.btn-floating):not(.btn-flat):not(.icon)', ['waves-classic']);
       }
+      
+      // Ajax
+      $('.change-language').on('success.site.ajax', function() {
+	  window.location.reload();
+      });
 
       // Init Loaded Components
       // ======================

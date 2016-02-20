@@ -1,24 +1,25 @@
 @site-page-unfold: {
   .page, .site-footer {
-    margin-left: @site-menubar-unfold-width;
+    margin-left: @site-menubar-width;
+    transition: margin-left .25s;
   }
 
   &.page-aside-fixed {
     .page-aside {
-      left: @site-menubar-unfold-width;
+      left: @site-menubar-width;
     }
 
     .site-footer {
-      margin-left: (@page-aside-width + @site-menubar-unfold-width);
-    }
+      margin-left: (@page-aside-width + @site-menubar-width);
+    }  
   }
 };
 
 @site-page-md-unfold: {
   &.page-aside-fixed {
     .site-footer {
-      margin-left: (@page-aside-md-width + @site-menubar-unfold-width);
-    }
+      margin-left: (@page-aside-md-width + @site-menubar-width);
+    }  
   }
 };
 
@@ -26,92 +27,29 @@
   .site-navbar {
     .navbar-header {
       @media (min-width: @grid-float-breakpoint) {
-        width: @site-menubar-unfold-width;
+        width: @site-menubar-width;
+        transition: width .25s;
       }
     }
 
     .navbar-container {
       @media (min-width: @grid-float-breakpoint) {
-        margin-left: @site-menubar-unfold-width;
-      }
-    }
-  }
-
-};
-
-@site-menu-unfold: {
-  .site-menu {
-    &-category {
-      transition: all .25s, font .1s .15s, color .1s .15s;
-
-      font-size: 12px;
-      font-weight: @font-weight-bold;
-      padding: 0 24px;
-      color: @site-menu-category-color;
-      line-height: @site-menu-top-height;
-      text-transform: uppercase;
-      margin-top: @site-menu-category-margin-top;
-    }
-
-    > .site-menu-item {
-      > a {
-        .site-menu-title {
-          font-size: @site-menu-top-font-size;
-        }
+        margin-left: @site-menubar-width;
       }
     }
 
-    &-icon {
-      margin-right: @site-menu-top-font-size;
+    .navbar-brand {
+      // padding: 22px 20px;
+      float: left;
+      text-align: left;
+
+      &-logo {
+        height: 26px;
+      }
     }
 
-    &-title {
+    .navbar-brand-text {
       display: inline-block;
-      max-width: 160px;
-
-      &:first-child {
-        margin-left: (2 * @site-menu-top-font-size);
-      }
-    }
-
-    .site-menu-sub {
-      display: none;
-    }
-
-    &-item {
-      transition: transform .1s, all .25s, border 0;
-      line-height: @site-menu-sub-height;
-
-      &.open {
-        > a {
-          .site-menu-arrow {
-            .transform(rotate(90deg));
-          }
-        }
-
-        > .site-menu-sub {
-          display: block;
-        }
-      }
-
-      &:not(.open) {
-        > a {
-          .site-menu-arrow {
-            .transform(none);
-          }
-        }
-
-        > .site-menu-sub {
-          display: none;
-        }
-      }
-    }
-
-    > .site-menu-item {
-      > a {
-        padding: 0 30px;
-        line-height: @site-menu-top-height;
-      }
     }
   }
 };
@@ -124,19 +62,19 @@
   }
 
   .site-menubar {
-    width: @site-menubar-unfold-width;
+    width: @site-menubar-width;
   }
 };
 
 @site-gridmenu-unfold: {
   .site-gridmenu {
-    width: @site-menubar-unfold-width;
+    width: @site-menubar-width;
   }
 };
 
 @site-menubar-footer-unfold: {
   .site-menubar-footer {
-    width: @site-menubar-unfold-width;
+    width: @site-menubar-width;
   }
 };
 
@@ -148,26 +86,17 @@
   }
 };
 
-@media screen and (max-width: @grid-float-breakpoint-max),
-screen and (min-width: @screen-lg-min) {
-  .css-menubar {
-    // @site-page-unfold();
-    @site-navbar-unfold();
-    @site-menu-unfold();
-    @site-menubar-unfold();
-    @site-gridmenu-unfold();
-    @site-menubar-footer-unfold();
-    @site-menubar-toggle-unfold();
-
-    .site-menu-item {
-      &:hover {
-        > .site-menu-sub {
-          display: block;
-        }
-      }
-    }
-  }
-}
+// @media screen and (max-width: @grid-float-breakpoint-max),
+// screen and (min-width: @screen-lg-min) {
+//   .css-menubar {
+//     // @site-page-unfold();
+//     // @site-navbar-unfold();
+//     // @site-menubar-unfold();
+//     @site-gridmenu-unfold();
+//     @site-menubar-footer-unfold();
+//     @site-menubar-toggle-unfold();
+//   }
+// }
 
 @media screen and (min-width: @screen-lg-min) {
   .css-menubar {
@@ -180,7 +109,6 @@ screen and (min-width: @screen-lg-min) {
     @site-page-unfold();
 
     @site-navbar-unfold();
-    @site-menu-unfold();
     @site-menubar-unfold();
     @site-gridmenu-unfold();
     @site-menubar-footer-unfold();
@@ -204,8 +132,8 @@ screen and (min-width: @screen-lg-min) {
 
     .site-menubar-open {
       .page, .site-footer {
-        -ms-transform: translate(@site-menubar-unfold-width, 0);
-        .transform(translate3d(@site-menubar-unfold-width, 0, 0));
+        -ms-transform: translate(@site-menubar-width, 0);
+        .transform(translate3d(@site-menubar-width, 0, 0));
       }
     }
 

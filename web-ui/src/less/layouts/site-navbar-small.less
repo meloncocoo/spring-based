@@ -55,42 +55,91 @@
     }
   }
 
-  .site-menubar {
-    top: @navbar-small-height;
+  .page-aside-fixed {
+    .page-aside {
+      top: @navbar-small-height;
+      height: calc(~'100% - '@navbar-small-height);
+    }
+  }
 
-    @height: %(~"100% - %d", @navbar-small-height);
-    height: -webkit-calc(@height);
-    height: calc(@height);
+  .site-menubar {
+    @top: @navbar-small-height;
+    top: @top;
   }
 
   .site-gridmenu {
     top: @navbar-small-height;
   }
-}
 
-@media (max-width: @grid-float-breakpoint-max) {
-  body.site-navbar-collapse-show.site-navbar-small {
-    padding-top: (2 * @navbar-small-height);
+  .site-skintools {
+    top: (@navbar-small-height + 30px);
   }
 
-  .site-navbar-small {
-    .site-menubar {
-      top: @navbar-small-height;
+  .slidePanel-right, .slidePanel-left {
+    top: @navbar-small-height;
+  }
+}
 
-      .site-navbar-collapse-show & {
-        top: (2*@navbar-small-height);
-        @height: %(~"100% - %d", (2*@navbar-small-height));
-        height: -webkit-calc(@height);
-        height: calc(@height);
-      }
+@media (max-width: @screen-xs-max) {
+
+  body.site-navbar-small {
+    padding-top: @navbar-small-height;
+
+    .site-menubar {
+      @top: @navbar-small-height;
+      top: @top;
+
+      @height: %(~"100% - %d", @top);
+
+      height: -webkit-calc(@height);
+      height: calc(@height);
     }
 
     .page-aside {
       top: @navbar-small-height;
+      height: calc(~'100% - '@navbar-small-height);
+    }
 
-      .site-navbar-collapse-show & {
-        top: (2 * @navbar-small-height);
+    .page-aside-fixed {
+      .page-aside {
+        top: @navbar-small-height;
+        height: calc(~'100% - '@navbar-small-height);
       }
+    }
+
+    .site-skintools {
+      top: (@navbar-small-height + 30px);
+    }
+
+    .slidePanel-right, .slidePanel-left {
+      top: @navbar-small-height;
+    }      
+
+    &.site-navbar-collapse-show {
+      padding-top: (2 * @navbar-small-height);
+
+      .site-menubar {
+        top: (2*@navbar-small-height);
+
+        @height: %(~"100% - %d", (2*@navbar-small-height));
+        height: -webkit-calc(@height);
+        height: calc(@height);
+      }
+
+      .page-aside {
+        top: (2 * @navbar-small-height);
+        height: calc(~'100% - '(2*@navbar-small-height));
+      }
+
+      .site-skintools {
+        top: (2 * @navbar-small-height + 30px) ;
+      }
+
+      .slidePanel {
+        &.slidePanel-left, &.slidePanel-right {
+          top: (2 * @navbar-small-height);
+        }
+      }    
     }
   }
 }

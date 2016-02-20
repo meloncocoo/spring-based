@@ -19,19 +19,33 @@
     }
 
     .navbar-brand {
+      float: none;
       color: @site-navbar-brand-color;
       font-family: @brand-font-family;
       cursor: pointer;
+      text-align: center;
+
+      .text-overflow();
+
+      &-logo {
+        height: 22px;
+        transition: height .25s;
+      }
+
+      &-text {
+        display: none;
+      }
     }
 
     @media (min-width: @grid-float-breakpoint) {
-      width: @site-menubar-unfold-width;
+      width: @site-menubar-fold-width;
     }
   }
 
   .navbar-container {
     @media (min-width: @grid-float-breakpoint) {
-      margin-left: @site-menubar-unfold-width;
+      margin-left: @site-menubar-fold-width;
+      transition: margin-left .25s;
     }
 
     background-color: @inverse;

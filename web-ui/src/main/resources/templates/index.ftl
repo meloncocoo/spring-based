@@ -1,5 +1,7 @@
 <#import "/libs/layout.ftl" as layout>
-<@layout.base title="这里是标题">
+<#assign scripts=[
+] />
+<@layout.base title="这里是标题" scripts=scripts>
 <#--
 <script>
 (function(document, window, $) {

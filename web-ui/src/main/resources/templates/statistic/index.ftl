@@ -82,7 +82,7 @@
 		<div class="row" data-plugin="matchHeight" data-by-row="true">
 			<div class="col-md-6">
 				<h4>2015年期间汇总表</h4>
-				<p>多厂多期间汇总</p>
+				<p>多期间汇总</p>
 				<div class="table-responsive">
 					<table class="table table-hover">
 						<thead>
@@ -109,9 +109,34 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<h4 class="text-center">2015年期间汇总表</h4>
-				<p class="text-center">多厂多期间汇总</p>
-				<div id="exampleC3Donut"></div>
+				<h4 class="text-center">2015年期间毛利率表</h4>
+				<p class="text-center">多厂多期间毛利率</p>
+				<div class="row">
+					<div class="col-md-4">
+						<h6 class="text-center" style="margin: 10px 0 0;">2010-2015.001</h6>
+						<div id="profit01"></div>
+					</div>
+					<div class="col-md-4">
+						<h6 class="text-center" style="margin: 10px 0 0;">2010-2015.002</h6>
+						<div id="profit02"></div>
+					</div>
+					<div class="col-md-4">
+						<h6 class="text-center" style="margin: 10px 0 0;">2010-2015.003</h6>
+						<div id="profit03"></div>
+					</div>
+					<div class="col-md-4">
+						<h6 class="text-center" style="margin: 10px 0 0;">2320-2015.001</h6>
+						<div id="profit04"></div>
+					</div>
+					<div class="col-md-4">
+						<h6 class="text-center" style="margin: 10px 0 0;">2320-2015.002</h6>
+						<div id="profit05"></div>
+					</div>
+					<div class="col-md-4">
+						<h6 class="text-center" style="margin: 10px 0 0;">2320-2015.003</h6>
+						<div id="profit06"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

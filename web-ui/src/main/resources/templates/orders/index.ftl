@@ -9,6 +9,7 @@
 					<table class="table table-condensed table-hover">
 						<thead>
 							<tr>
+								<th>#</th>
 								<th><@spring.message "order.yearQuarter" /></th>
 								<th><@spring.message "order.sOrg" /></th>
 								<th><@spring.message "order.code" /></th>
@@ -29,6 +30,7 @@
 						<tbody>
 						<#list orders as order>
 							<tr>
+								<td>${order?index + 1}</td>
 								<td>${order.getYear()?string("0000")}.${order.getQuarter()?string("000")}</td>
 								<td>${order.getOrganize()}</td>
 								<td>${order.getCode()}</td>
@@ -41,9 +43,9 @@
 								<td>${order.getScope()}</td>
 								<td>${order.getCustomer()}</td>
 								<td>${order.getCurrency()}</td>
-								<td class="text-right">${order.getPrice()?string("#,###,##0.00")}</td>
-								<td class="text-right">${order.getIncome()?string("#,###,##0.00")}</td>
-								<td class="text-right">${order.getCost()?string("#,###,##0.00")}</td>
+								<td class="text-right"><span class="label table-label label-${(order.getPrice() > 0)?then('info', 'danger')}">${order.getPrice()?string("#,###,##0.00")}</lable></td>
+								<td class="text-right"><span class="label table-label label-${(order.getIncome() > 0)?then('info', 'danger')}">${order.getIncome()?string("#,###,##0.00")}</lable></td>
+								<td class="text-right"><span class="label table-label label-${(order.getCost() > 0)?then('info', 'danger')}">${order.getCost()?string("#,###,##0.00")}</lable></td>
 							</tr>
 						</#list>
 						</tbody>

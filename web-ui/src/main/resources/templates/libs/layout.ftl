@@ -52,7 +52,7 @@
 	<#include "/components/menubar.ftl" />
 
 	<div class="page animation-fade">
-		<@component.page_header />
+		<@component.page_header title=title/>
 		<div class="page-content container-fluid">
 			<#nested>
 		</div>

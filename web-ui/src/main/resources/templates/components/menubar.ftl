@@ -16,6 +16,12 @@
 					        <span class="site-menu-title">所有图表</span>
 					    </a>
 					</li>
+					<li class="site-menu-item">
+					    <a class="animsition-link" href="/orders">
+					        <i class="site-menu-icon wb-order" aria-hidden="true"></i>
+					        <span class="site-menu-title">销售订单</span>
+					    </a>
+					</li>
 				</ul>
 			</div>
 		</div>

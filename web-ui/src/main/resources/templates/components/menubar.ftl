@@ -7,7 +7,7 @@
 					<li class="site-menu-item active">
 						<a class="animsition-link" href="statistic">
 							<i class="site-menu-icon wb-stats-bars" aria-hidden="true"></i>
-							<span class="site-menu-title"><@spring.message "dashboard.menu.title" /></span>
+							<span class="site-menu-title"><@spring.message 'page.statistic' /></span>
 						</a>
 					</li>
 					<li class="site-menu-item">

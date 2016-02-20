@@ -8,7 +8,7 @@
 	'assets/vendor/c3/c3.js',
 	'assets/statistic/js/core.js'
 ] />
-<@layout.base title="这里是标题" scripts=scripts styles=styles>
+<@layout.base title="<@spring.message 'page.statistic' />" scripts=scripts styles=styles>
 
 <div class="row">
 	<div class="col-md-3">

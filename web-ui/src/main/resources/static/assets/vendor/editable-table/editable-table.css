@@ -7,7 +7,7 @@
 .editable-table + input:focus,
 .editable-table + input
 {
-    border: 1px solid #3f51b5 !important;
+    border: 1px solid #607d8b !important;
     outline: none !important;
     outline-offset: 0 !important;
 }

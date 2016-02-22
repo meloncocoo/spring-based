@@ -62,33 +62,102 @@
 		}, options));
 	})();
 
+//	(function() {
+//		var chart = c3.generate({
+//			bindto : '#chart',
+//			data : {
+//				columns : [ [ 'data1', 30, 200, 100, 400, 150, 250 ], [ 'data2', 50, 20, 10, 40, 15, 25 ] ],
+//				axes : {
+//					data2 : 'y2'
+//				},
+//				types : {
+//					data2 : 'bar' // ADD
+//				}
+//			},
+//			axis : {
+//				y : {
+//					label : {
+//						text : 'Y Label',
+//						position : 'outer-middle'
+//					}
+//				},
+//				y2 : {
+//					show : true,
+//					label : {
+//						text : 'Y2 Label',
+//						position : 'outer-middle'
+//					}
+//				}
+//			}
+//		});
+//	})();
+	
 	(function() {
 		var chart = c3.generate({
-			bindto : '#chart',
-			data : {
-				columns : [ [ 'data1', 30, 200, 100, 400, 150, 250 ], [ 'data2', 50, 20, 10, 40, 15, 25 ] ],
-				axes : {
-					data2 : 'y2'
-				},
-				types : {
-					data2 : 'bar' // ADD
-				}
-			},
-			axis : {
-				y : {
-					label : {
-						text : 'Y Label',
-						position : 'outer-middle'
-					}
-				},
-				y2 : {
-					show : true,
-					label : {
-						text : 'Y2 Label',
-						position : 'outer-middle'
-					}
-				}
-			}
+			bindto: '#chart',
+		    data: {
+		        columns: [
+		            ['2010', 300, 350, 300, 0, 0, 0],
+		            ['2320', 130, 100, 140, 200, 150, 50]
+		        ],
+		        types: {
+		            '2010': 'area',
+		            '2320': 'area-spline'
+		        }
+		    }
+		});
+	})();
+	
+	(function() {
+		var chart = c3.generate({
+			bindto: '#donut01',
+		    data: {
+		        columns: [
+		            ['001', 56272153.47],
+		            ['002', 26843680.04],
+		            ['003', 54227327.32]
+		        ],
+		        type : 'donut',
+		        onclick: function (d, i) { console.log("onclick", d, i); },
+		        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+		        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+		    },
+		    donut: {
+		        title: "Quantity"
+		    }
+		});
+		var chart = c3.generate({
+			bindto: '#donut02',
+		    data: {
+		        columns: [
+		            ['001', 30],
+		            ['002', 120],
+		        ],
+		        type : 'donut',
+		        onclick: function (d, i) { console.log("onclick", d, i); },
+		        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+		        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+		    },
+		    donut: {
+		        title: "Quantity"
+		    }
+		});
+		var chart = c3.generate({
+			bindto: '#donut03',
+		    data: {
+		        columns: [
+		            ['001', 54227327.32],
+		            ['002', 61363408.49],
+		            ['003', 22045548.83]
+		        ],
+		        type : 'donut',
+		        onclick: function (d, i) { console.log("onclick", d, i); },
+		        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+		        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+		    },
+		    donut: {
+		        title: "Quantity"
+		    }
 		});
 	})();
 })(document, window, $);

@@ -193,7 +193,7 @@
 .player-controls button:hover
 {
     color: #fff;
-    background: #3f51b5;
+    background: #607d8b;
 }
 .player-controls button:focus
 {
@@ -356,7 +356,7 @@
 {
     z-index: 2;
 
-    color: #3f51b5;
+    color: #607d8b;
 }
 .player-progress-buffer[value]
 {
@@ -549,15 +549,15 @@
 }
 .player-volume[type='range']:focus::-webkit-slider-thumb
 {
-    background: #3f51b5;
+    background: #607d8b;
 }
 .player-volume[type='range']:focus::-moz-range-thumb
 {
-    background: #3f51b5;
+    background: #607d8b;
 }
 .player-volume[type='range']:focus::-ms-thumb
 {
-    background: #3f51b5;
+    background: #607d8b;
 }
 .player.ios .player-volume,
 .player.ios [data-player='mute'],

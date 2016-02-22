@@ -19,13 +19,13 @@ public class CompanyController {
 		
 		company = new Company();
 		company.setCode("2010");
-		company.setName("公司名称1");
+		company.setName("超匯桂盟傳動（蘇州）有限公司");
 		company.setDescription("描述1");
 		companies.add(company);
 		
 		company = new Company();
 		company.setCode("2320");
-		company.setName("公司名称2");
+		company.setName("超匯桂盟傳動（天津）有限公司");
 		company.setDescription("描述2");
 		companies.add(company);
 		

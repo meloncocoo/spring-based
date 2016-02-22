@@ -49,7 +49,7 @@
 }
 .clockpicker-popover .text-primary
 {
-    color: #3f51b5;
+    color: #607d8b;
 }
 .clockpicker .input-group-addon
 {
@@ -156,7 +156,7 @@
 .clockpicker-tick:hover
 {
     color: #fff;
-    background-color: #7986cb;
+    background-color: #90a4ae;
 }
 .clockpicker-button
 {
@@ -216,21 +216,21 @@
 .clockpicker-canvas-fg
 {
     stroke: none;
-    fill: #3f51b5;
+    fill: #607d8b;
 }
 .clockpicker-canvas-bg
 {
     stroke: none;
-    fill: #c5cae9;
+    fill: #cfd8dc;
 }
 .clockpicker-canvas-bg-trans
 {
-    fill: #7986cb;
+    fill: #90a4ae;
     fill: rgba(0, 149, 221, .25);
 }
 .clockpicker-canvas line
 {
-    stroke: #3f51b5;
+    stroke: #607d8b;
     stroke-width: 1;
     stroke-linecap: round;
 }

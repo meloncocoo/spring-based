@@ -207,7 +207,7 @@
 }
 .jsgrid-header-row .jsgrid-header-sort
 {
-    background: #c5cae9;
+    background: #cfd8dc;
 }
 .jsgrid-header-sort:before
 {
@@ -284,8 +284,8 @@
 }
 .jsgrid-selected-row > td
 {
-    border-color: #c5cae9;
-    background: #c5cae9;
+    border-color: #cfd8dc;
+    background: #cfd8dc;
 }
 .jsgrid-nodata-row td
 {

@@ -1,3 +1,4 @@
+<#import "/libs/spring.ftl" as spring>
 <#macro main title>
 <!DOCTYPE html>
 <html class="no-js css-menubar" lang="en">
@@ -7,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 <meta name="description" content="bootstrap admin template">
 <meta name="author" content="">
-<title>Login V2 | Remark Admin Template</title>
+<title>Login | KMC <@spring.message "site.title" /></title>
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 <link rel="shortcut icon" href="/assets/images/favicon.ico">
 <!-- Stylesheets -->
@@ -46,10 +47,10 @@
     <div class="page-content">
       <div class="page-brand-info">
         <div class="brand">
-          <img class="brand-img" src="../../assets/images/logo@2x.png" alt="...">
-          <h2 class="brand-text font-size-40">Remark</h2>
+          <img class="brand-img" src="../../assets/images/logo.png" alt="...">
+          <h2 class="brand-text font-size-40"><@spring.message "site.title" /></h2>
         </div>
-        <p class="font-size-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <p class="font-size-20 hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <#nested>

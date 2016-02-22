@@ -148,23 +148,23 @@
 }
 .toolbar-primary
 {
-    background-color: #3f51b5;
+    background-color: #607d8b;
 }
 .toolbar-primary.tool-top .arrow
 {
-    border-color: #3f51b5 transparent transparent;
+    border-color: #607d8b transparent transparent;
 }
 .toolbar-primary.tool-bottom .arrow
 {
-    border-color: transparent transparent #3f51b5;
+    border-color: transparent transparent #607d8b;
 }
 .toolbar-primary.tool-left .arrow
 {
-    border-color: transparent transparent transparent #3f51b5;
+    border-color: transparent transparent transparent #607d8b;
 }
 .toolbar-primary.tool-right .arrow
 {
-    border-color: transparent #3f51b5 transparent transparent;
+    border-color: transparent #607d8b transparent transparent;
 }
 .toolbar-primary .tool-item
 {
@@ -174,7 +174,7 @@
 .toolbar-primary .tool-item:hover
 {
     color: #fff;
-    background: #3949ab;
+    background: #546e7a;
 }
 .toolbar-success
 {

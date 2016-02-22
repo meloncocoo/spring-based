@@ -272,16 +272,16 @@
 .webui-popover-primary .webui-popover-title
 {
     color: #fff;
-    border-color: #3f51b5;
-    background-color: #3f51b5;
+    border-color: #607d8b;
+    background-color: #607d8b;
 }
 .webui-popover-primary.bottom .arrow
 {
-    border-bottom-color: #3f51b5;
+    border-bottom-color: #607d8b;
 }
 .webui-popover-primary.bottom .arrow:after
 {
-    border-bottom-color: #3f51b5;
+    border-bottom-color: #607d8b;
 }
 .webui-popover-success .webui-popover-title
 {

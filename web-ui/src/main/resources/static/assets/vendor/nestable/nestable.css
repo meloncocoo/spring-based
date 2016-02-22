@@ -59,7 +59,7 @@
 }
 .dd-handle:hover
 {
-    color: #3f51b5;
+    color: #607d8b;
     background: #eee;
 }
 .dd-content
@@ -232,7 +232,7 @@
 }
 .dd-item-alt .dd-content:hover
 {
-    color: #3f51b5;
+    color: #607d8b;
     background: #eee;
 }
 .dd-item-with-media .dd-handle

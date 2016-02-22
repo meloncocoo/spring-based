@@ -210,7 +210,7 @@
 		© 2016 <a href="javascript:;"><@spring.message "site.title" /></a>
 	</div>
 	<div class="site-footer-right">
-		Crafted with <i class="red-600 icon md-favorite"></i> by <a href="javascript:;">Melon Cocoo</a>
+		Crafted with <i class="red-600 icon md-favorite"></i> by <a href="javascript:;">ichangeman</a>
 	</div>
 </footer>
 <!-- Footer End -->

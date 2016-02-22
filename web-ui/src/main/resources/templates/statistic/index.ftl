@@ -152,4 +152,20 @@
 	</div>
 </div>
 
+<div class="panel">
+	<div class="panel-body container-fluid">
+		<div class="row" data-plugin="matchHeight" data-by-row="true">
+			<div class="col-md-4">
+				<div style="height: 300px;" id="donut01"></div>
+			</div>
+			<div class="col-md-4">
+				<div style="height: 300px;" id="donut02"></div>
+			</div>
+			<div class="col-md-4">
+				<div style="height: 300px;" id="donut03"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
 </@layout.base>

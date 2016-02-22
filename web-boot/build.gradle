@@ -27,7 +27,7 @@ dependencies {
     
     compile "com.fasterxml.jackson.datatype:jackson-datatype-joda"
     compile "joda-time:joda-time"
-    compile "joda-time:joda-time-hibernate"
+//    compile "joda-time:joda-time-hibernate"
     compile "org.hibernate:hibernate-envers"
     compile "org.hibernate:hibernate-ehcache"
     compile "com.h2database:h2"

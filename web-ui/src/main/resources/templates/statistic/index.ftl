@@ -1,7 +1,7 @@
 <#import "/spring.ftl" as spring>
 <#import "/libs/layout.ftl" as layout>
 <#assign styles=[
-	'/assets/vendor/c3/c3.css'
+	'assets/vendor/c3/c3.css'
 ] />
 <#assign scripts=[
 	'assets/vendor/d3/d3.js',

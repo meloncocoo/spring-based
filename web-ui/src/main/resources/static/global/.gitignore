@@ -1,0 +1,7 @@
+node_modules/
+css/*.css
+fonts/**/*.css
+js/**/*.js
+vendor/*
+!.gitignore
+

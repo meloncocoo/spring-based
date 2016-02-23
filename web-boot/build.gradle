@@ -1,6 +1,7 @@
 buildscript {
     repositories {
         jcenter()
+        //mavenCentral()
     }
 
     dependencies {
@@ -10,10 +11,14 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'spring-boot'
+apply plugin: 'war'
 
 jar {
     baseName = 'spring-boot'
     version = '0.0.1-SNAPSHOT'
+}
+war {
+	baseName = 'kmc'
 }
 
 sourceCompatibility = 1.8
@@ -36,6 +41,7 @@ dependencies {
     compile project(":web-ui")
     
     runtime "mysql:mysql-connector-java"
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
     
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }

@@ -23,7 +23,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile "org.springframework.boot:spring-boot-starter-freemarker"
+//    compile "org.springframework.boot:spring-boot-starter-freemarker"
     
 //    compile "org.webjars:bootstrap:3.3.6"
 }

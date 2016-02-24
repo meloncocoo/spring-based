@@ -75,14 +75,14 @@
   <script src="/global/vendor/screenfull/screenfull.js"></script>
   <script src="/global/vendor/slidepanel/jquery-slidePanel.js"></script>
   <!-- Scripts -->
-  <script src="/assets/js/core.js"></script>
+  <script src="/global/js/core.js"></script>
   <script src="/assets/js/site.js"></script>
   <script src="/assets/js/sections/menu.js"></script>
   <script src="/assets/js/sections/menubar.js"></script>
   <script src="/assets/js/sections/gridmenu.js"></script>
   <script src="/assets/js/sections/sidebar.js"></script>
   <script src="/global/js/configs/config-colors.js"></script>
-  <script src="/global/js/configs/config-tour.js"></script>
+  <script src="/assets/js/configs/config-tour.js"></script>
   <script src="/global/js/components/asscrollable.js"></script>
   <script src="/global/js/components/animsition.js"></script>
   <script src="/global/js/components/slidepanel.js"></script>
@@ -152,10 +152,10 @@
 		<div class="page-content">
 			<div class="page-brand-info">
 				<div class="brand">
-					<img class="brand-img" src="/assets/images/logo@2x.png" alt="...">
-					<h2 class="brand-text font-size-40">Remark</h2>
+					<img class="brand-img" src="/assets/images/logo.png" alt="...">
+					<h2 class="brand-text font-size-40"><@spring.message "site.title" /></h2>
 				</div>
-				<p class="font-size-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p class="font-size-20 hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
 			<#nested>
 		</div>
@@ -176,14 +176,14 @@
 	<script src="/global/vendor/slidepanel/jquery-slidePanel.js"></script>
 	<script src="/global/vendor/jquery-placeholder/jquery.placeholder.js"></script>
 	<!-- Scripts -->
-	<script src="/assets/js/core.js"></script>
+	<script src="/global/js/core.js"></script>
 	<script src="/assets/js/site.js"></script>
 	<script src="/assets/js/sections/menu.js"></script>
 	<script src="/assets/js/sections/menubar.js"></script>
 	<script src="/assets/js/sections/gridmenu.js"></script>
 	<script src="/assets/js/sections/sidebar.js"></script>
 	<script src="/global/js/configs/config-colors.js"></script>
-	<script src="/global/js/configs/config-tour.js"></script>
+	<script src="/assets/js/configs/config-tour.js"></script>
 	<script src="/global/js/components/asscrollable.js"></script>
 	<script src="/global/js/components/animsition.js"></script>
 	<script src="/global/js/components/slidepanel.js"></script>

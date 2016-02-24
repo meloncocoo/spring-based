@@ -22,7 +22,7 @@ public class StatisticController {
 		SaleStatistic sale;
 		
 		sale = new SaleStatistic();
-		sale.setQuarter("0001");
+		sale.setQuarter("1月");
 		sale.setQuantity(56272153.47);
 		sale.setIncome(65181677.18);
 		sale.setCost(24561400.42);
@@ -30,7 +30,7 @@ public class StatisticController {
 		sales.add(sale);
 		
 		sale = new SaleStatistic();
-		sale.setQuarter("0002");
+		sale.setQuarter("2月");
 		sale.setQuantity(26843680.04);
 		sale.setIncome(28248572.7);
 		sale.setCost(11179260.93);
@@ -38,7 +38,7 @@ public class StatisticController {
 		sales.add(sale);
 		
 		sale = new SaleStatistic();
-		sale.setQuarter("0003");
+		sale.setQuarter("3月");
 		sale.setQuantity(54227327.32);
 		sale.setIncome(61363408.49);
 		sale.setCost(22045548.83);
@@ -46,7 +46,7 @@ public class StatisticController {
 		sales.add(sale);
 		
 		sale = new SaleStatistic();
-		sale.setQuarter("0004");
+		sale.setQuarter("4月");
 		sale.setQuantity(0);
 		sale.setIncome(0);
 		sale.setCost(0);

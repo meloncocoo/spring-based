@@ -27,7 +27,7 @@ public class LocaleConfiguration extends WebMvcConfigurerAdapter /*implements En
 //		SessionLocaleResolver resolver = new SessionLocaleResolver();
 		CookieLocaleResolver resolver = new CookieLocaleResolver();
 		
-		resolver.setDefaultLocale(new Locale("zh_CN"));
+		resolver.setDefaultLocale(new Locale("en"));
 		resolver.setCookieName("MLN_TRANSLATE_LANG_KEY");
 		resolver.setCookieMaxAge(4800);
 		

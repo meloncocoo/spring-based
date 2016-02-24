@@ -13,13 +13,13 @@
 					<li class="site-menu-item">
 					    <a class="animsition-link" href="companies">
 					        <i class="site-menu-icon wb-home" aria-hidden="true"></i>
-					        <span class="site-menu-title">公司</span>
+					        <span class="site-menu-title"><@spring.message 'page.companies' /></span>
 					    </a>
 					</li>
 					<li class="site-menu-item">
 					    <a class="animsition-link" href="orders">
 					        <i class="site-menu-icon wb-order" aria-hidden="true"></i>
-					        <span class="site-menu-title">销售订单</span>
+					        <span class="site-menu-title"><@spring.message 'page.orders' /></span>
 					    </a>
 					</li>
 				</ul>

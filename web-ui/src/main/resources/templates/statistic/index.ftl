@@ -18,7 +18,7 @@
               <div class="widget-watermark darker font-size-60 margin-15"><i class="icon md-assignment" aria-hidden="true"></i></div>
               <div class="counter counter-md counter-inverse text-left">
                 <div class="counter-number-group">
-                  <span class="counter-number">137,343,160.83</span>
+                  <span class="counter-number">1,343,160.83</span>
                   <span class="counter-number-related text-capitalize"></span>
                 </div>
                 <div class="counter-label text-capitalize"><@spring.message "statistic.quantity" /></div>
@@ -34,7 +34,7 @@
               <div class="widget-watermark darker font-size-60 margin-15"><i class="icon md-assignment" aria-hidden="true"></i></div>
               <div class="counter counter-md counter-inverse text-left">
                 <div class="counter-number-group">
-                  <span class="counter-number">154,793,658.37</span>
+                  <span class="counter-number">1,793,658.37</span>
                   <span class="counter-number-related text-capitalize"></span>
                 </div>
                 <div class="counter-label text-capitalize"><@spring.message "statistic.income" /></div>
@@ -50,7 +50,7 @@
               <div class="widget-watermark darker font-size-60 margin-15"><i class="icon md-assignment" aria-hidden="true"></i></div>
               <div class="counter counter-md counter-inverse text-left">
                 <div class="counter-number-group">
-                  <span class="counter-number"> 57,786,210.18</span>
+                  <span class="counter-number"> 586,210.18</span>
                   <span class="counter-number-related text-capitalize"></span>
                 </div>
                 <div class="counter-label text-capitalize"><@spring.message "statistic.cost" /></div>
@@ -88,19 +88,19 @@
 						<thead>
 							<tr>
 								<th><@spring.message "statistic.quarter" /></th>
-								<th><@spring.message "statistic.quantity" /></th>
-								<th><@spring.message "statistic.income" /></th>
-								<th><@spring.message "statistic.cost" /></th>
-								<th><@spring.message "statistic.profit" /></th>
+								<th class="text-center visible-lg"><@spring.message "statistic.quantity" /></th>
+								<th class="text-center"><@spring.message "statistic.income" /></th>
+								<th class="text-center visible-md visible-lg"><@spring.message "statistic.cost" /></th>
+								<th class="text-center"><@spring.message "statistic.profit" /></th>
 							</tr>
 						</thead>
 						<tbody>
 						<#list sales![] as sale>
 							<tr>
-								<td class="text-right">${sale.quarter}</td>
-								<td class="text-right">${sale.quantity}</td>
+								<td>${sale.quarter}</td>
+								<td class="text-right visible-lg">${sale.quantity}</td>
 								<td class="text-right">${sale.income}</td>
-								<td class="text-right">${sale.cost}</td>
+								<td class="text-right visible-md visible-lg">${sale.cost}</td>
 								<td class="text-right"><span class="label label-table label-<#if (sale.profit > 0)>success<#else>danger</#if>">${sale.profit?string("#0.00%")}</span></td>
 							</tr>
 						</#list>
@@ -112,27 +112,27 @@
 				<h4 class="text-center">2015年期间毛利率表</h4>
 				<p class="text-center">多厂多期间毛利率</p>
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-6">
 						<h6 class="text-center" style="margin: 10px 0 0;">2010-2015.001</h6>
 						<div id="profit01"></div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-6">
 						<h6 class="text-center" style="margin: 10px 0 0;">2010-2015.002</h6>
 						<div id="profit02"></div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-6">
 						<h6 class="text-center" style="margin: 10px 0 0;">2010-2015.003</h6>
 						<div id="profit03"></div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-6">
 						<h6 class="text-center" style="margin: 10px 0 0;">2320-2015.001</h6>
 						<div id="profit04"></div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-6">
 						<h6 class="text-center" style="margin: 10px 0 0;">2320-2015.002</h6>
 						<div id="profit05"></div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-6">
 						<h6 class="text-center" style="margin: 10px 0 0;">2320-2015.003</h6>
 						<div id="profit06"></div>
 					</div>

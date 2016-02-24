@@ -43,7 +43,7 @@
 						<tbody>
 						<#list companies as company>
 							<tr>
-								<td>${company?index + 1}</td>
+								<td></td>
 								<td>${company.getCode()}</td>
 								<td>${company.getName()}</td>
 							</tr>

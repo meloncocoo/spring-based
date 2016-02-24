@@ -30,7 +30,7 @@
 						<tbody>
 						<#list orders as order>
 							<tr>
-								<td>${order?index + 1}</td>
+								<td>1</td>
 								<td>${order.getYear()?string("0000")}.${order.getQuarter()?string("000")}</td>
 								<td>${order.getOrganize()}</td>
 								<td>${order.getCode()}</td>

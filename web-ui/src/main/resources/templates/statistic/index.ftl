@@ -1,12 +1,12 @@
 <#import "/spring.ftl" as spring>
 <#import "/libs/layout.ftl" as layout>
 <#assign styles=[
-	'assets/vendor/c3/c3.css'
+	'/global/vendor/c3/c3.css'
 ] />
 <#assign scripts=[
-	'assets/vendor/d3/d3.js',
-	'assets/vendor/c3/c3.js',
-	'assets/statistic/js/core.js'
+	'/global/vendor/d3/d3.js',
+	'/global/vendor/c3/c3.js',
+	'/assets/site/js/statistic.js'
 ] />
 <@layout.base title=springMacroRequestContext.getMessage('page.statistic') scripts=scripts styles=styles>
 

@@ -14,9 +14,10 @@ apply plugin: 'spring-boot'
 apply plugin: 'war'
 
 jar {
-    baseName = 'spring-boot'
+    baseName = 'web-boot'
     version = '0.0.1-SNAPSHOT'
 }
+
 war {
 	baseName = 'kmc'
 }

@@ -1,6 +1,6 @@
-<#import "/layout/account.ftl" as account>
+<#import "/libs/layout.ftl" as layout>
 <#import "/libs/spring.ftl" as spring>
-<@account.main title="Login">
+<@layout.account title="Login">
 <div class="page-login-main">
 	<div class="brand visible-xs">
 		<img class="brand-img" src="/assets/images/logo.png" alt="...">
@@ -34,4 +34,4 @@
 		</div>
 	</footer>
 </div>
-</@account.main>
+</@layout.account>

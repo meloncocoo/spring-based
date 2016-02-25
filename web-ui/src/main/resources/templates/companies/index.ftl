@@ -15,11 +15,11 @@
 			<div class="panel-body container-fluid">
 				<div class="chart-panel-header" style="position: relative;">
 	                <h4>销售数量</h4>
-	                <div class="text-right">
+	                <div class="text-right" style="position: absolute; top: 0; right: 0;">
 	                	<div class="btn-group" role="group">
-							<button id="quantity" type="button" class="btn btn-warning waves-effect waves-light"><@spring.message "company.quantity" /></button>
-							<button id="income" type="button" class="btn btn-danger waves-effect waves-light"><@spring.message "company.income" /></button>
-							<button id="cost" type="button" class="btn btn-success waves-effect waves-light"><@spring.message "company.cost" /></button>
+							<button id="quantity" type="button" class="btn btn-xs btn-warning waves-effect waves-light"><@spring.message "company.quantity" /></button>
+							<button id="income" type="button" class="btn btn-xs btn-danger waves-effect waves-light"><@spring.message "company.income" /></button>
+							<button id="cost" type="button" class="btn btn-xs btn-success waves-effect waves-light"><@spring.message "company.cost" /></button>
 						</div>
 	                </div>
                 </div>
@@ -34,7 +34,7 @@
 					<table class="table table-condensed table-hover">
 						<thead>
 							<tr>
-								<th class="visible-md visible-lg">#</th>
+								<th class="visible-lg">#</th>
 								<th><@spring.message "company.code" /></th>
 								<th><@spring.message "company.name" /></th>
 							</tr>
@@ -42,7 +42,7 @@
 						<tbody>
 						<#list companies as company>
 							<tr>
-								<td class="visible-md visible-lg">${company?index + 1}</td>
+								<td class="visible-lg">${company?index + 1}</td>
 								<td>${company.getCode()}</td>
 								<td>${company.getName()}</td>
 							</tr>

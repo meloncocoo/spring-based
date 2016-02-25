@@ -4,12 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/")
-public class HomeController {
+@RequestMapping("/barcode")
+public class BarcodeController {
 
-	@RequestMapping("")
-	String index() {
-		return "redirect:/account/login";
+	@RequestMapping("/track")
+	String track() {
+		return "barcode/track";
 	}
 	
 }

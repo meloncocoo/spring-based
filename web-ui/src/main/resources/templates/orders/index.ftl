@@ -9,8 +9,8 @@
 					<table class="table table-condensed table-hover">
 						<thead>
 							<tr>
-								<th>#</th>
-								<th><@spring.message "order.month" /></th>
+								<th class="visible-lg">#</th>
+								<th><@spring.message "order.yearQuarter" /></th>
 								<th><@spring.message "order.sOrg" /></th>
 								<th><@spring.message "order.code" /></th>
 								<th class="visible-lg"><@spring.message "order.refCode" /></th>
@@ -30,7 +30,7 @@
 						<tbody>
 						<#list orders as order>
 							<tr>
-								<td>${order?index + 1}</td>
+								<td class="visible-lg">${order?index + 1}</td>
 								<td>${order.getYear()?string("0000")}.${order.getQuarter()?string("000")}</td>
 								<td>${order.getOrganize()}</td>
 								<td>${order.getCode()}</td>

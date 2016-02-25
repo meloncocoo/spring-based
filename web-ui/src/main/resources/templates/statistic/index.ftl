@@ -87,7 +87,7 @@
 					<table class="table table-hover">
 						<thead>
 							<tr>
-								<th><@spring.message "statistic.quarter" /></th>
+								<th><@spring.message "statistic.month" /></th>
 								<th class="text-center visible-lg"><@spring.message "statistic.quantity" /></th>
 								<th class="text-center"><@spring.message "statistic.income" /></th>
 								<th class="text-center visible-md visible-lg"><@spring.message "statistic.cost" /></th>

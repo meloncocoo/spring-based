@@ -1,9 +1,9 @@
 {
-  "name": "remark",
-  "title": "Remark",
-  "description": "The best backend-end framework for developing responsive, mobile first projects on the web.",
-  "version": "2.1.0",
-  "homepage": "http://getbootstrapadmin.com/remark",
+  "name": "kmc",
+  "title": "KMC",
+  "description": "",
+  "version": "1.0.0",
+  "homepage": "",
   "private": true,
   "keywords": [
     "css",
@@ -17,16 +17,16 @@
     "bootstrap"
   ],
   "author": {
-    "name": "amazingsurge",
-    "url": "http://amazingSurge.com"
+    "name": "",
+    "url": ""
   },
   "bugs": {
-    "url": "https://forum.getbootstrapadmin.com/remark"
+    "url": ""
   },
-  "license": "Themeforest Standard Licenses",
+  "license": "",
   "licenses": [{
-    "type": "Themeforest Standard Licenses",
-    "url": "http://themeforest.net/licenses/standard"
+    "type": "",
+    "url": ""
   }],
   "devDependencies": {
     "glob": "*",

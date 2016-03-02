@@ -5,21 +5,27 @@
 			<div>
 				<ul class="site-menu">
 					<li class="site-menu-item active">
-						<a class="animsition-link" href="statistic">
-							<i class="site-menu-icon wb-stats-bars" aria-hidden="true"></i>
+						<a class="animsition-link" href="/statistic">
+							<i class="site-menu-icon wb-graph-up" aria-hidden="true"></i>
 							<span class="site-menu-title"><@spring.message 'page.statistic' /></span>
 						</a>
 					</li>
 					<li class="site-menu-item">
-					    <a class="animsition-link" href="companies">
-					        <i class="site-menu-icon wb-home" aria-hidden="true"></i>
-					        <span class="site-menu-title">公司</span>
+					    <a class="animsition-link" href="/companies">
+					        <i class="site-menu-icon wb-grid-9" aria-hidden="true"></i>
+					        <span class="site-menu-title"><@spring.message 'page.companies' /></span>
 					    </a>
 					</li>
 					<li class="site-menu-item">
-					    <a class="animsition-link" href="orders">
+					    <a class="animsition-link" href="/orders">
 					        <i class="site-menu-icon wb-order" aria-hidden="true"></i>
-					        <span class="site-menu-title">销售订单</span>
+					        <span class="site-menu-title"><@spring.message 'page.orders' /></span>
+					    </a>
+					</li>
+					<li class="site-menu-item">
+					    <a class="animsition-link" href="/barcode/track">
+					        <i class="site-menu-icon wb-stats-bars" aria-hidden="true"></i>
+					        <span class="site-menu-title"><@spring.message 'page.barcode.track' /></span>
 					    </a>
 					</li>
 				</ul>

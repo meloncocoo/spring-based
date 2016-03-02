@@ -82,7 +82,7 @@
                 '<a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Lock">' +
                 '<span class="icon md-eye" aria-hidden="true"></span>' +
                 '</a>' +
-                '<a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Logout">' +
+                '<a href="/account/login" data-placement="top" data-toggle="tooltip" data-original-title="Logout">' +
                 '<span class="icon md-power" aria-hidden="true"></span>' +
                 '</a>' +
                 '</div>'
@@ -271,6 +271,10 @@
         Waves.attach('.page > div:not(.page-header) .btn:not(.ladda-button):not(.btn-round):not(.btn-pure):not(.btn-floating):not(.btn-flat)', ['waves-light']);
         Waves.attach('.page > div:not(.page-header) .btn-pure:not(.ladda-button):not(.btn-round):not(.btn-floating):not(.btn-flat):not(.icon)', ['waves-classic']);
       }
+      
+      $(".change-language").on("success.site.ajax", function() {
+    	  window.location.reload();
+      });
 
       // Init Loaded Components
       // ======================

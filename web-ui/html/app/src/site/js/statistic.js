@@ -61,49 +61,28 @@
 			}
 		}, options));
 	})();
-
-//	(function() {
-//		var chart = c3.generate({
-//			bindto : '#chart',
-//			data : {
-//				columns : [ [ 'data1', 30, 200, 100, 400, 150, 250 ], [ 'data2', 50, 20, 10, 40, 15, 25 ] ],
-//				axes : {
-//					data2 : 'y2'
-//				},
-//				types : {
-//					data2 : 'bar' // ADD
-//				}
-//			},
-//			axis : {
-//				y : {
-//					label : {
-//						text : 'Y Label',
-//						position : 'outer-middle'
-//					}
-//				},
-//				y2 : {
-//					show : true,
-//					label : {
-//						text : 'Y2 Label',
-//						position : 'outer-middle'
-//					}
-//				}
-//			}
-//		});
-//	})();
 	
 	(function() {
 		var chart = c3.generate({
 			bindto: '#chart',
 		    data: {
+		    	x: 'x',
 		        columns: [
-		            ['2010', 300, 350, 300, 0, 0, 0],
-		            ['2320', 130, 100, 140, 200, 150, 50]
+		            ['x', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+		            ['2010', 300, 350, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+		            ['2110', 200, 245, 350, 150, 400, 250, 278, 345, 355, 277, 399, 421],
+		            ['2320', 130, 100, 140, 200, 150, 50, 0, 0, 0, 0, 0, 0]
 		        ],
 		        types: {
 		            '2010': 'area',
+		            '2110': 'area',
 		            '2320': 'area-spline'
 		        }
+		    },
+		    axis: {
+		    	x: { 
+		    		tick: { values: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'] }
+		    	}
 		    }
 		});
 	})();
@@ -113,9 +92,9 @@
 			bindto: '#donut01',
 		    data: {
 		        columns: [
-		            ['001', 56272153.47],
-		            ['002', 26843680.04],
-		            ['003', 54227327.32]
+		            ['2010', 56272153.47],
+		            ['2110', 26843680.04],
+		            ['2320', 54227327.32]
 		        ],
 		        type : 'donut',
 		        onclick: function (d, i) { console.log("onclick", d, i); },
@@ -123,15 +102,16 @@
 		        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
 		    },
 		    donut: {
-		        title: "Quantity"
+		        title: "Income"
 		    }
 		});
 		var chart = c3.generate({
 			bindto: '#donut02',
 		    data: {
 		        columns: [
-		            ['001', 30],
-		            ['002', 120],
+		            ['2010', 572153.47],
+		            ['2110', 243680.04],
+		            ['2320', 427327.32]
 		        ],
 		        type : 'donut',
 		        onclick: function (d, i) { console.log("onclick", d, i); },
@@ -139,16 +119,16 @@
 		        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
 		    },
 		    donut: {
-		        title: "Quantity"
+		        title: "Cost"
 		    }
 		});
 		var chart = c3.generate({
 			bindto: '#donut03',
 		    data: {
 		        columns: [
-		            ['001', 54227327.32],
-		            ['002', 61363408.49],
-		            ['003', 22045548.83]
+		            ['2010', 57],
+		            ['2110', 66],
+		            ['2320', 70]
 		        ],
 		        type : 'donut',
 		        onclick: function (d, i) { console.log("onclick", d, i); },
@@ -156,7 +136,7 @@
 		        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
 		    },
 		    donut: {
-		        title: "Quantity"
+		        title: "Profit"
 		    }
 		});
 	})();

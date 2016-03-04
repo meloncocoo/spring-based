@@ -9,7 +9,7 @@ public class HomeController {
 
 	@RequestMapping("")
 	String index() {
-		return "redirect:/account/login";
+		return "redirect:/statistic";
 	}
 	
 }

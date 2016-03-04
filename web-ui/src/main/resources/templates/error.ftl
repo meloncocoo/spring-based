@@ -11,9 +11,6 @@
 	</p>
 	<p id="detail-error" class="error-advise collapse">${path} - ${message}</p>
 	<a class="btn btn-primary btn-round" href="/">GO TO HOME PAGE</a>
-	<footer class="page-copyright">
-		<p>WEBSITE BY <@spring.message "site.createdBy" /></p>
-		<p>© 2016. All RIGHT RESERVED.</p>
-	</footer>
+	<@layout.shortFooter />
 </div>
 </@layout.error>

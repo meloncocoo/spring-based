@@ -39,7 +39,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		
 		if (null == authenticationEntryPoint) {
-			authenticationEntryPoint = new Http401UnauthorizedEntryPoint("/account/login");
+			authenticationEntryPoint = new Http401UnauthorizedEntryPoint("/account");
 		}
 		
 		http
@@ -47,9 +47,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 			.authenticationEntryPoint(authenticationEntryPoint)
 		.and()
 			.formLogin()
-			.loginPage("/account/login")
+			.loginPage("/account")
 			.loginProcessingUrl("/login")
-			.failureUrl("/account/login?error")
+			.defaultSuccessUrl("/")
+			.failureUrl("/account?error")
 			.permitAll()
 		.and()
 			.logout()
@@ -60,7 +61,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 			.authorizeRequests()
 			.antMatchers("/account/**").permitAll()
 			.antMatchers("/api/language").permitAll()
-			.antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
+			.antMatchers("/**").access("hasRole('ROLE_USER')")
+			//.antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
 			.anyRequest().authenticated();
 	}
 

@@ -311,3 +311,9 @@
 </footer>
 <!-- Footer End -->
 </#macro>
+<#macro shortFooter>
+	<footer class="page-copyright">
+		<p>WEBSITE BY <@spring.message "site.createdBy" /></p>
+		<p>© ${.now?string("YYYY")}. All RIGHT RESERVED.</p>
+	</footer>
+</#macro>

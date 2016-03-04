@@ -1,48 +1,40 @@
+logging:
+  file: testFile.log
+  level:
+    root: INFO
+#    sun.rmi: false
+#    org.springframework: false
+#    org.springframework.boot: false
+#    freemarker.cache: false
+#    org.hibernate: false
+#    org.apache: false
+#    javax.activation: false
 spring:
-  freemarker:
-    cache: false
-    
   datasource:
-      dataSourceClassName: org.h2.jdbcx.JdbcDataSource
-      url: jdbc:h2:mem:jhipster;DB_CLOSE_DELAY=-1
-      username: 
-      password: 
-
+    dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+    url: jdbc:mysql://localhost:3306/spring?useUnicode=true&characterEncoding=utf8
+    username: spring
+    password: spring
   jpa:
-    database-platform: org.melon.spring.domain.util.FixedH2Dialect
-    database: H2
+    database-platform: org.hibernate.dialect.MySQLInnoDBDialect
+    database: MYSQL
     openInView: false
-    show-sql: true
+    show-sql: false
     generate-ddl: false
     hibernate:
-        ddl-auto: none
-        naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
     properties:
-        hibernate.cache.use_second_level_cache: true
-        hibernate.cache.use_query_cache: false
-        hibernate.generate_statistics: true
-        hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
-        cache-seconds: 1
+      hibernate:
+        cache.use_second_level_cache: true
+        cache.use_query_cache: false
+        generate_statistics: false
+        dialect: org.hibernate.dialect.MySQL5Dialect
 
-#  datasource:
-#    dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
-#    url: jdbc:mysql://localhost:3306/spring?useUnicode=true&characterEncoding=utf8
-#    username: spring
-#    password: spring
-#  jpa:
-#    database-platform: org.hibernate.dialect.MySQLInnoDBDialect
-#    database: MYSQL
-#    openInView: false
-#    show-sql: false
-#    generate-ddl: false
-#    hibernate:
-#      ddl-auto: update
-#      naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
-#    properties:
-#      hibernate:
-#        cache.use_second_level_cache: true
-#        cache.use_query_cache: false
-#        generate_statistics: false
-#        dialect: org.hibernate.dialect.MySQL5Dialect
-
-
+security:
+  basic:
+    enabled: false
+    
+server:
+  session:
+    timeout: 10

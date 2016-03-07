@@ -2,6 +2,7 @@ logging:
   file: testFile.log
   level:
     root: INFO
+    org.melon.spring: DEBUG
 spring:
   datasource:
     dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
@@ -28,4 +29,4 @@ security:
     enabled: false
 server:
   session:
-    timeout: 10
+    timeout: 30

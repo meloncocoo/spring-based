@@ -28,6 +28,12 @@
 					        <span class="site-menu-title"><@spring.message 'page.barcode.track' /></span>
 					    </a>
 					</li>
+					<li class="site-menu-item">
+					    <a class="animsition-link" href="/sys/permission">
+					        <i class="site-menu-icon wb-stats-bars" aria-hidden="true"></i>
+					        <span class="site-menu-title">权限</span>
+					    </a>
+					</li>
 				</ul>
 			</div>
 		</div>

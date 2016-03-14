@@ -2,6 +2,7 @@
 /**/bin/
 /**/.settings/
 /**/.*
+/**/*.log
 /**/node_modules/
 !.gitignore
 

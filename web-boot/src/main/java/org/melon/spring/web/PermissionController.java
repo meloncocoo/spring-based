@@ -26,4 +26,10 @@ public class PermissionController {
 		return "permission/index";
 	}
 	
+	@RequestMapping("/add")
+	public String add(Model model) {
+		log.debug("Request to add new permission page.");
+		return "permission/add";
+	}
+	
 }

@@ -1,6 +1,6 @@
 <#import "/spring.ftl" as spring>
 <#import "/libs/components.ftl" as component>
-<#macro base title styles=[] scripts=[]>
+<#macro base title styles=[] scripts=[] actions=[]>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -13,9 +13,9 @@
   <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="/assets/images/favicon.ico">
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="/global/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/global/css/bootstrap-extend.min.css">
-  <link rel="stylesheet" href="/assets/css/site.min.css">
+  <link rel="stylesheet" href="/global/css/bootstrap.css">
+  <link rel="stylesheet" href="/global/css/bootstrap-extend.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
   <!-- Plugins -->
   <link rel="stylesheet" href="/global/vendor/animsition/animsition.css">
   <link rel="stylesheet" href="/global/vendor/asscrollable/asScrollable.css">
@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="${style}">
   </#list>
   <!-- Fonts -->
-  <link rel="stylesheet" href="/global/fonts/material-design/material-design.min.css">
-  <link rel="stylesheet" href="/global/fonts/brand-icons/brand-icons.min.css">
+  <link rel="stylesheet" href="/global/fonts/material-design/material-design.css">
+  <link rel="stylesheet" href="/global/fonts/brand-icons/brand-icons.css">
   <link rel="stylesheet" href="/global/fonts/web-icons/web-icons.css">
   
   <!--[if lt IE 9]>
@@ -52,7 +52,7 @@
 	<#include "/components/menubar.ftl" />
 
 	<div class="page animation-fade">
-		<@component.page_header title=title/>
+		<@component.page_header title=title actions=actions/>
 		<div class="page-content container-fluid">
 			<#nested>
 		</div>
@@ -118,9 +118,9 @@
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 <link rel="shortcut icon" href="/assets/images/favicon.ico">
 <!-- Stylesheets -->
-<link rel="stylesheet" href="/global/css/bootstrap.min.css">
-<link rel="stylesheet" href="/global/css/bootstrap-extend.min.css">
-<link rel="stylesheet" href="/assets/css/site.min.css">
+<link rel="stylesheet" href="/global/css/bootstrap.css">
+<link rel="stylesheet" href="/global/css/bootstrap-extend.css">
+<link rel="stylesheet" href="/assets/css/site.css">
 <!-- Plugins -->
 <link rel="stylesheet" href="/global/vendor/animsition/animsition.css">
 <link rel="stylesheet" href="/global/vendor/asscrollable/asScrollable.css">
@@ -131,8 +131,8 @@
 <link rel="stylesheet" href="/global/vendor/waves/waves.css">
 <link rel="stylesheet" href="/assets/site/css/pages/login.css">
 <!-- Fonts -->
-<link rel="stylesheet" href="/global/fonts/material-design/material-design.min.css">
-<link rel="stylesheet" href="/global/fonts/brand-icons/brand-icons.min.css">
+<link rel="stylesheet" href="/global/fonts/material-design/material-design.css">
+<link rel="stylesheet" href="/global/fonts/brand-icons/brand-icons.css">
 <!--[if lt IE 9]>
     <script src="/global/vendor/html5shiv/html5shiv.min.js"></script>
     <![endif]-->
@@ -217,9 +217,9 @@
 	<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 	<link rel="shortcut icon" href="/assets/images/favicon.ico">
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="/global/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/global/css/bootstrap-extend.min.css">
-	<link rel="stylesheet" href="/assets/css/site.min.css">
+	<link rel="stylesheet" href="/global/css/bootstrap.css">
+	<link rel="stylesheet" href="/global/css/bootstrap-extend.css">
+	<link rel="stylesheet" href="/assets/css/site.css">
 	<!-- Plugins -->
 	<link rel="stylesheet" href="/global/vendor/animsition/animsition.css">
 	<link rel="stylesheet" href="/global/vendor/asscrollable/asScrollable.css">
@@ -231,8 +231,8 @@
 	<link rel="stylesheet" href="/global/vendor/waves/waves.css">
 	<link rel="stylesheet" href="/assets/site/css/pages/error.css">
 	<!-- Fonts -->
-	<link rel="stylesheet" href="/global/fonts/material-design/material-design.min.css">
-	<link rel="stylesheet" href="/global/fonts/brand-icons/brand-icons.min.css">
+	<link rel="stylesheet" href="/global/fonts/material-design/material-design.css">
+	<link rel="stylesheet" href="/global/fonts/brand-icons/brand-icons.css">
 	
 	<!--[if lt IE 9]>
 	  <script src="/global/vendor/html5shiv/html5shiv.min.js"></script>

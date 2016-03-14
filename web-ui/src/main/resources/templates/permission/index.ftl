@@ -1,6 +1,11 @@
 <#import "/libs/layout.ftl" as layout>
 <#import "/libs/components.ftl" as components>
-<@layout.base title="Permission">
+<#assign actions=[
+	{ "label": "Add", "icon": "md-plus", "href": "permission/add" },
+	{ "label": "Edit", "icon": "md-edit" },
+	{ "label": "Refresh", "icon": "md-refresh" }
+] />
+<@layout.base title="Permission" actions=actions>
 	<@components.panel title="Permission">
 		<div class="">
 			<table class="table table-hover">

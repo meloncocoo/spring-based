@@ -1,5 +1,5 @@
 <#import "/libs/spring.ftl" as spring>
-<#macro page_header title="">
+<#macro page_header title="" actions=[]>
 <div class="page-header">
 	<ol class="breadcrumb">
 		<li><a href="/"><@spring.message 'page.home' /></a></li>
@@ -7,15 +7,11 @@
 	</ol>
 	<h1 class="page-title">${title}</h1>
 	<div class="page-header-actions">
-		<button type="button" class="btn btn-sm btn-icon btn-primary btn-round" data-toggle="tooltip" data-original-title="Edit">
-			<i class="icon md-edit" aria-hidden="true"></i>
-		</button>
-		<button type="button" class="btn btn-sm btn-icon btn-primary btn-round" data-toggle="tooltip" data-original-title="Refresh">
-			<i class="icon md-refresh-alt" aria-hidden="true"></i>
-		</button>
-		<button type="button" class="btn btn-sm btn-icon btn-primary btn-round" data-toggle="tooltip" data-original-title="Setting">
-			<i class="icon md-settings" aria-hidden="true"></i>
-		</button>
+	<#list actions as action>
+		<a href="${action['href']!'javascript:;'}" class="btn btn-sm btn-icon btn-primary btn-round" data-toggle="tooltip" data-original-title="${action['label']!''}">
+			<i class="icon ${action['icon']!''}" aria-hidden="true"></i>
+		</a>
+	</#list>
 	</div>
 </div>
 </#macro>
@@ -23,7 +19,7 @@
 <div class="panel">
 	<div class="panel-heading">
 		<h3 class="panel-title">${title}</h3>
-		<div class="panel-actions">
+		<div class="panel-actions hide">
 			<a class="panel-action icon md-plus"></a>
 			<a class="panel-action icon md-minus"></a>
 			<a class="panel-action icon md-refresh-alt"></a>

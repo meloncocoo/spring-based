@@ -52,7 +52,7 @@
 	<#include "/components/menubar.ftl" />
 
 	<div class="page animation-fade">
-		<@component.page_header title=title actions=actions/>
+		<@component.page_header title=title actions=actions />
 		<div class="page-content container-fluid">
 			<#nested>
 		</div>
@@ -87,7 +87,6 @@
   <script src="/global/js/components/animsition.js"></script>
   <script src="/global/js/components/slidepanel.js"></script>
   <script src="/global/js/components/switchery.js"></script>
-  <script src="/global/js/components/tabs.js"></script>
   <script src="/global/js/components/ajax.js"></script>
   <#list scripts as script>
   <script src="${script}"></script>

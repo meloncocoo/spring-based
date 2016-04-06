@@ -1,7 +1,4 @@
-<#import "/libs/layout.ftl" as layout>
 <#import "/libs/components.ftl" as components>
-<@layout.base title="Permission" actions=actions>
-	<@components.panel title="Add a new Permission">
-
-	</@components.panel>
-</@layout.base>
+<@components.panel title="Permission">
+	<a data-plugin="loader" data-load-callback="directToList" data-load-target=".page-content.container-fluid">Add</a>	
+</@components.panel>

@@ -15,14 +15,14 @@
 	</div>
 </div>
 </#macro>
-<#macro panel title="" attributes="">
+<#macro panel title="" actions=[]>
 <div class="panel">
 	<div class="panel-heading">
 		<h3 class="panel-title">${title}</h3>
-		<div class="panel-actions hide">
-			<a class="panel-action icon md-plus"></a>
-			<a class="panel-action icon md-minus"></a>
-			<a class="panel-action icon md-refresh-alt"></a>
+		<div class="panel-actions">
+		<#list actions as action>
+			<a class="panel-action icon ${action['icon']!''}" ${action['attrs']!''}></a>
+		</#list>
 		</div>
 	</div>
 	<div class="panel-body">

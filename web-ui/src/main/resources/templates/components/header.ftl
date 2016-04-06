@@ -62,7 +62,7 @@
 						</li>
 						<li class="divider" role="presentation"></li>
 						<li role="presentation">
-							<a href="/account/login" role="menuitem"><i class="icon md-power" aria-hidden="true"></i> 注销</a>
+							<a href="/logout" role="menuitem"><i class="icon md-power" aria-hidden="true"></i> 注销</a>
 						</li>
 					</ul>
 				</li>
